@@ -1,0 +1,7 @@
+D:\Proj\StateManager\bin\Release\Demo.exe.config
+D:\Proj\StateManager\bin\Release\Demo.exe
+D:\Proj\StateManager\Demo\obj\Release\Demo.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\Demo\obj\Release\Demo.Form1.resources
+D:\Proj\StateManager\Demo\obj\Release\Demo.Properties.Resources.resources
+D:\Proj\StateManager\Demo\obj\Release\Demo.csproj.GenerateResource.Cache
+D:\Proj\StateManager\Demo\obj\Release\Demo.exe

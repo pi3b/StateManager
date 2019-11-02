@@ -1,0 +1,5 @@
+D:\Proj\StateManager\bin\Debug\SMConnectionTCP.dll
+D:\Proj\StateManager\bin\Debug\SMConnectionTCP.pdb
+D:\Proj\StateManager\SMConnectionTCP\obj\Debug\SMConnectionTCP.dll
+D:\Proj\StateManager\SMConnectionTCP\obj\Debug\SMConnectionTCP.pdb
+D:\Proj\StateManager\SMConnectionTCP\obj\Debug\SMConnectionTCP.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+D:\Proj\StateManager\bin\Debug\SMConnectionPLCS7.dll
+D:\Proj\StateManager\bin\Debug\SMConnectionPLCS7.pdb
+D:\Proj\StateManager\SMConnectionPLCS7\obj\Debug\SMConnectionPLCS7.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMConnectionPLCS7\obj\Debug\SMConnectionPLCS7.dll
+D:\Proj\StateManager\SMConnectionPLCS7\obj\Debug\SMConnectionPLCS7.pdb

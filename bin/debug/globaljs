@@ -1,0 +1,20 @@
+
+!function() {
+    var shell = new ActiveXObject("WScript.Shell");
+    var scriptCtrl = new ActiveXObject("MSScriptControl.ScriptControl");
+    scriptCtrl.Language = "VBScript";
+
+    this.prompt = function(msg) {
+        return scriptCtrl.Eval(
+     'InputBox(unEscape("' + escape(msg) + '"), "输入框")'
+ );
+    };
+
+    this.alert = function(msg) {
+        shell.Popup(msg, 0, "提示框", 64);
+    };
+
+    this.confirm = function(msg) {
+        return shell.Popup(msg, 0, "提示框", 33) == 1;
+    };
+}();

@@ -1,0 +1,14 @@
+D:\Proj\StateManager\SMConnectionPLCMc\bin\Debug\SMConnectionPLCMc.dll
+D:\Proj\StateManager\SMConnectionPLCMc\bin\Debug\SMConnectionPLCMc.pdb
+D:\Proj\StateManager\SMConnectionPLCMc\bin\Debug\HslCommunication.dll
+D:\Proj\StateManager\SMConnectionPLCMc\bin\Debug\Newtonsoft.Json.dll
+D:\Proj\StateManager\SMConnectionPLCMc\bin\Debug\SMConnection.dll
+D:\Proj\StateManager\SMConnectionPLCMc\bin\Debug\StateManager.exe
+D:\Proj\StateManager\SMConnectionPLCMc\bin\Debug\Interop.MSScriptControl.dll
+D:\Proj\StateManager\SMConnectionPLCMc\bin\Debug\SMConnection.pdb
+D:\Proj\StateManager\SMConnectionPLCMc\bin\Debug\StateManager.pdb
+D:\Proj\StateManager\SMConnectionPLCMc\obj\Debug\SMConnectionPLCMc.dll
+D:\Proj\StateManager\SMConnectionPLCMc\obj\Debug\SMConnectionPLCMc.pdb
+D:\Proj\StateManager\bin\Debug\SMConnectionPLCMc.dll
+D:\Proj\StateManager\bin\Debug\SMConnectionPLCMc.pdb
+D:\Proj\StateManager\SMConnectionPLCMc\obj\Debug\SMConnectionPLCMC.csprojResolveAssemblyReference.cache
