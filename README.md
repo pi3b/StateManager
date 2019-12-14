@@ -3,9 +3,6 @@ StateManager是专为工业智能化设计的状态机框架
 
 ![avatar](favicon128.ico)
 
-## StateManager的特点介绍：
-https://pi3b.github.io
-
 ## StateManager目录结构：
 bin 二进制文件，含三方插件等    
 --debug    
