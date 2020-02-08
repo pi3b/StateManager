@@ -3,6 +3,8 @@ StateManager是专为工业智能化设计的状态机框架
 
 ![avatar](favicon128.ico)
 
+## 简介
+[https://pi3b.github.io/statemanager-docs/#/](https://pi3b.github.io/statemanager-docs/#/)
 ## StateManager目录结构：
 bin 二进制文件，含三方插件等    
 --debug    
@@ -32,6 +34,7 @@ SMConnectionORACLE  此文件夹为SMConnectionORACLE源代码
 SMConnectionPLCMC  此文件夹为SMConnectionPLCMC源代码  
 SMConnectionPLCS7  此文件夹为SMConnectionPLCS7源代码  
 StateManager.sln  解决方案  
+
 
 ## StateManager快速上手：
 1.直接运行程序目录中的 SMCore.exe。  
