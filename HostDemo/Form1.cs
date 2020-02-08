@@ -6,11 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using StateManager;
 using System.Threading;
 
-namespace Demo
+namespace StateManager
 {
+    [System.Runtime.InteropServices.ComVisible(true)]//使脚本中可以使用本窗体对象，即：SManager.Owner
     public partial class Form1 : Form
     {
         SManager SManager; //声明一个状态机
@@ -18,12 +18,20 @@ namespace Demo
         {
             InitializeComponent();
 
-            //程序启动时，创建状态机对象
-            SManager = new SManager(
-                    Application.StartupPath + "\\project.so"//指定so配置文件
-                    ,System.Reflection.Assembly.GetExecutingAssembly()
-                    );                 
-            SManager.Start(false);                                 //运行状态机，参数表示是否暂停实例
+            try
+            {
+                //程序启动时，创建状态机对象
+                SManager = new SManager(
+                        Application.StartupPath + "\\project.json"//指定so配置文件
+                        );
+                SManager.Start(false); //运行状态机，参数表示是否挂起实例
+                SManager.Owner = this; //使脚本系统或实例成员可以访问到本窗体
+            }
+            catch(Exception E)
+            {
+                MessageBox.Show(E.Message);
+                throw;
+            }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -32,33 +40,19 @@ namespace Demo
             SManager.Stop();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //不暂停实例
-            SManager.wPaused = false;
-        }
-
-        private void button2_Click(object sender, System.EventArgs e)
-        {
-            //暂停实例
-            SManager.wPaused = true;
-        }
-
         private void button3_Click(object sender, System.EventArgs e)
         {
-            //状态机自带的 实例列表管理界面
-            (SManager.SPlugIn.GetPlugIn("执行控制") as IPlugIn).PlugInForm.Show();
+            SManager.GetSOObjectForm("执行控制").Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //状态机自带的网络连接管理界面
-            (SManager.SPlugIn.GetPlugIn("连接管理") as IPlugIn).PlugInForm.Show();
+            SManager.GetSOObjectForm("连接管理").Show();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            SManager.GetSOObjectForm("报警信息").Show();
         }
 
     }

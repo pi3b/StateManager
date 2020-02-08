@@ -55,7 +55,6 @@ namespace StateManager
             }
         }
 
-
         public OracleDataReader ReadReader(string Sql)
         {
             if (!Connected) throw new Exception("ORACLE数据库未连接");
@@ -64,11 +63,10 @@ namespace StateManager
             OracleCommand Cmd = new OracleCommand();
             Cmd.Connection = Con;
             Cmd.CommandText = Sql;
-            Cmd.CommandType = CommandType.Text;
-            OracleDataReader Reader = null;
+            Cmd.CommandType = System.Data.CommandType.Text;
             try
             {
-                Reader = Cmd.ExecuteReader();
+                return Cmd.ExecuteReader();
             }
             catch (Exception E)
             {
@@ -78,19 +76,18 @@ namespace StateManager
                 }
                 throw;
             }
-            return Reader;
             //}
         }
         public int ReadFirstInt(string Sql)
         {
             OracleDataReader Reader = ReadReader(Sql);
-            int result = 0;
             if (Reader.Read())
             {
-                result = Convert.ToInt32(Reader[0].ToString());
+                Reader.Close();
+                return Convert.ToInt32(Reader[0].ToString());
             }
             Reader.Close();
-            return result;
+            throw new Exception("没有记录");
         }
         public string ReadFirstStr(string Sql)
         {
@@ -98,6 +95,7 @@ namespace StateManager
             string result = null;
             if (Reader.Read())
             {
+                Reader.Close();
                 result = Reader[0].ToString();
             }
             Reader.Close();
@@ -106,23 +104,22 @@ namespace StateManager
         public DateTime ReadFirstDateTime(string Sql)
         {
             OracleDataReader Reader = ReadReader(Sql);
-            DateTime result;
             if (Reader.Read())
             {
-                result = (DateTime)Reader[0];
                 Reader.Close();
-                return result;
+                return (DateTime)Reader[0];
             }
-            else
-            {
-                Reader.Close();
-                throw new Exception("没有返回值");
-            }
+            Reader.Close();
+            throw new Exception("没有记录");
         }
+
         public int Execute(string Sql)
         {
             if (!Connected) throw new Exception("ORACLE数据库未连接");
             OracleCommand Cmd = new OracleCommand(Sql, Con);
+            Cmd.CommandType = System.Data.CommandType.Text;
+            //Cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            //Cmd.Parameters.Add("xxx", xxx);//函数的参数
             try
             {
                 return Cmd.ExecuteNonQuery();
@@ -133,25 +130,47 @@ namespace StateManager
                 throw;
             }
         }
+
+        /// <summary>界面(表）修改后更新到数据库
+        /// 
+        /// </summary>
+        /// <param name="sda"></param>
+        /// <param name="dt"></param>
         public void DataTableUpdate(object sda, DataTable dt)
         {
             if (!Connected) throw new Exception("ORACLE数据库未连接");
             OracleCommandBuilder SCB = new OracleCommandBuilder(sda as OracleDataAdapter);
             (sda as OracleDataAdapter).Update(dt);
         }
-        public void GetDataTableStatic(ref OracleDataAdapter sda, ref DataTable dt, string Sql)
+        /// <summary>获得表数据,界面可以直接关联到表
+        /// 
+        /// </summary>
+        /// <param name="sda"></param>
+        /// <param name="dt"></param>
+        /// <param name="Sql"></param>
+        public void GetDataTableStatic(ref object sda, ref DataTable dt, string Sql)
         {
             if (!Connected) throw new Exception("ORACLE数据库未连接");
             try
             {
-                sda.SelectCommand = new OracleCommand(Sql, Con);
-                sda.Fill(dt);
+                if(sda==null)
+                {
+                    sda = new OracleDataAdapter();
+                }
+                if(dt==null)
+                {
+                    dt=new DataTable();
+                }
+                (sda as OracleDataAdapter).SelectCommand = new OracleCommand(Sql, Con);
+                dt.Clear();
+                (sda as OracleDataAdapter).Fill(dt);
             }
             catch
             {
                 DisConnect();
                 throw;
             }
+            //方法2，通过Reader
             //SqlCommand command = new SqlCommand("select * from product", DBService.Conn)
             //SqlDataReader dr = command.ExecuteReader();
             //BindingSource bs = new BindingSource();
@@ -159,7 +178,10 @@ namespace StateManager
             //this.dataGridView1.DataSource = bs;  
         }
 
-
+        public override object Form
+        {
+            get { return null; }
+        }
     }
 }
 

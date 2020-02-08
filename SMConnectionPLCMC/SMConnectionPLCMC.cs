@@ -34,7 +34,7 @@ namespace StateManager
             {
                 OperateResult connect = MC.ConnectServer();
                 if (!connect.IsSuccess)
-                    throw new Exception("连接失败。");
+                    throw new Exception("连接失败1。");
             }
             catch
             {
@@ -54,9 +54,13 @@ namespace StateManager
             return Hsl(MC.ReadBool(Address));
         }
 
-        public int ReadInt(string Address)
+        public Int32 ReadInt32(string Address)
         {
             return Hsl(MC.ReadInt32(Address));
+        }
+        public Int16 ReadInt16(string Address)
+        {
+            return Hsl(MC.ReadInt16(Address));
         }
 
         public void Write(string Address,dynamic V)
@@ -69,6 +73,11 @@ namespace StateManager
             if (!r.IsSuccess)
                 throw new Exception(r.Message);
             return r.Content;
+        }
+
+        public override object Form
+        {
+            get { return null; }
         }
     }
 }

@@ -1,5 +1,5 @@
 D:\Proj\StateManager\bin\Debug\SMConnectionORACLE.dll
 D:\Proj\StateManager\bin\Debug\SMConnectionORACLE.pdb
-D:\Proj\StateManager\SMConnectionORACLE\obj\Debug\SMConnectionORACLE.csprojResolveAssemblyReference.cache
 D:\Proj\StateManager\SMConnectionORACLE\obj\Debug\SMConnectionORACLE.dll
 D:\Proj\StateManager\SMConnectionORACLE\obj\Debug\SMConnectionORACLE.pdb
+D:\Proj\StateManager\SMConnectionORACLE\obj\Debug\SMConnectionORACLE.csprojResolveAssemblyReference.cache

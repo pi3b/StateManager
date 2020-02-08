@@ -1,0 +1,7 @@
+D:\Proj\StateManager\bin\Debug\SMAdminForm.dll
+D:\Proj\StateManager\bin\Debug\SMAdminForm.pdb
+D:\Proj\StateManager\SMAdmin\obj\Debug\StateManager.SMAdminForm.resources
+D:\Proj\StateManager\SMAdmin\obj\Debug\SMAdminForm.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMAdmin\obj\Debug\SMAdminForm.dll
+D:\Proj\StateManager\SMAdmin\obj\Debug\SMAdminForm.pdb
+D:\Proj\StateManager\SMAdmin\obj\Debug\SMAdminForm.csprojResolveAssemblyReference.cache

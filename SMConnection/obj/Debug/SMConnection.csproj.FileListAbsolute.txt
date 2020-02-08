@@ -1,0 +1,7 @@
+D:\Proj\StateManager\bin\Debug\SMConnection.dll
+D:\Proj\StateManager\bin\Debug\SMConnection.pdb
+D:\Proj\StateManager\SMConnection\obj\Debug\SMConnection.dll
+D:\Proj\StateManager\SMConnection\obj\Debug\SMConnection.pdb
+D:\Proj\StateManager\SMConnection\obj\Debug\StateManager.SMConnectionAdminForm.resources
+D:\Proj\StateManager\SMConnection\obj\Debug\SMConnection.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMConnection\obj\Debug\SMConnection.csprojResolveAssemblyReference.cache

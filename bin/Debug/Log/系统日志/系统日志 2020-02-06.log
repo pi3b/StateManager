@@ -1,0 +1,3 @@
+2020-02-06 04:08:43:839	系统日志		未处理的异常	实例：[PLC_MC]	状态：	信息：程序集“Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed”中的类型“Newtonsoft.Json.Linq.JObject”未标记为可序列化。
+2020-02-06 04:08:53:862	系统日志		未处理的异常	实例：[PLC_MC]	状态：	信息：程序集“Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed”中的类型“Newtonsoft.Json.Linq.JObject”未标记为可序列化。
+2020-02-06 04:09:03:883	系统日志		未处理的异常	实例：[PLC_MC]	状态：	信息：程序集“Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed”中的类型“Newtonsoft.Json.Linq.JObject”未标记为可序列化。

@@ -30,6 +30,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -43,9 +51,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\bin\Debug\SMConnection.dll</HintPath>
     </Reference>
-    <Reference Include="StateManager, Version=3.0.21.0, Culture=neutral, processorArchitecture=x86">
+    <Reference Include="SMCore, Version=3.0.21.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin\Debug\StateManager.exe</HintPath>
+      <HintPath>..\bin\Debug\SMCore.exe</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

@@ -7,8 +7,8 @@
     <ProjectGuid>{4E33F720-E69B-45FC-B2E7-76B90BF3B795}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Demo</RootNamespace>
-    <AssemblyName>Demo</AssemblyName>
+    <RootNamespace>StateManager</RootNamespace>
+    <AssemblyName>HostDemo</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <PublishUrl>发布\</PublishUrl>
@@ -51,12 +51,13 @@
     <ApplicationIcon>favicon128.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SMConnection, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin\Debug\SMConnection.dll</HintPath>
+      <HintPath>..\bin\Debug\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="StateManager">
-      <HintPath>..\bin\Debug\StateManager.dll</HintPath>
+    <Reference Include="SMCore, Version=3.0.21.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Debug\SMCore.exe</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -71,24 +72,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logics\Pub.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Logics\type1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Logics\type1.Designer.cs">
-      <DependentUpon>type1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Logics\type2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Logics\type2.Designer.cs">
-      <DependentUpon>type2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

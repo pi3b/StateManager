@@ -1,0 +1,7 @@
+D:\Proj\StateManager\bin\Debug\PlugIn\StateManagerForm.dll
+D:\Proj\StateManager\bin\Debug\PlugIn\StateManagerForm.pdb
+D:\Proj\StateManager\StateManagerForm\obj\Debug\StateManagerForm.dll
+D:\Proj\StateManager\StateManagerForm\obj\Debug\StateManagerForm.pdb
+D:\Proj\StateManager\StateManagerForm\obj\Debug\StateManager.StateManagerForm.resources
+D:\Proj\StateManager\StateManagerForm\obj\Debug\StateManagerForm.csproj.GenerateResource.Cache
+D:\Proj\StateManager\StateManagerForm\obj\Debug\StateManagerForm.csprojResolveAssemblyReference.cache

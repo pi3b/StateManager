@@ -4,11 +4,10 @@ D:\Proj\StateManager\Demo\obj\Debug\Demo.Properties.Resources.resources
 D:\Proj\StateManager\Demo\obj\Debug\HostDemo.csproj.GenerateResource.Cache
 D:\Proj\StateManager\Demo\obj\Debug\Demo.exe
 D:\Proj\StateManager\Demo\obj\Debug\Demo.pdb
-D:\Proj\StateManager\bin\Debug\Demo.exe
-D:\Proj\StateManager\bin\Debug\Demo.pdb
-D:\Proj\StateManager\HostDemo\obj\Debug\Demo.Form1.resources
-D:\Proj\StateManager\HostDemo\obj\Debug\Demo.Properties.Resources.resources
 D:\Proj\StateManager\HostDemo\obj\Debug\HostDemo.csproj.GenerateResource.Cache
-D:\Proj\StateManager\HostDemo\obj\Debug\Demo.exe
-D:\Proj\StateManager\HostDemo\obj\Debug\Demo.pdb
-D:\Proj\StateManager\HostDemo\obj\Debug\HostDemo.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\HostDemo\obj\Debug\StateManager.Form1.resources
+D:\Proj\StateManager\bin\Debug\HostDemo.exe
+D:\Proj\StateManager\bin\Debug\HostDemo.pdb
+D:\Proj\StateManager\HostDemo\obj\Debug\StateManager.Properties.Resources.resources
+D:\Proj\StateManager\HostDemo\obj\Debug\HostDemo.exe
+D:\Proj\StateManager\HostDemo\obj\Debug\HostDemo.pdb

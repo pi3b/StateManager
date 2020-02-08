@@ -66,9 +66,14 @@ namespace StateManager
             return Hsl(S7.ReadBool(Address));
         }
 
-        public int ReadInt(string Address)
+        public Int32 ReadInt32(string Address)
         {
             return Hsl(S7.ReadInt32(Address));
+        }
+
+        public Int16 ReadInt16(string Address)
+        {
+            return Hsl(S7.ReadInt16(Address));
         }
 
         public void Write(string Address, dynamic V)
@@ -81,6 +86,11 @@ namespace StateManager
             if (!r.IsSuccess)
                 throw new Exception(r.Message);
             return r.Content;
+        }
+
+        public override object Form
+        {
+            get { return null; }
         }
     }
 }
