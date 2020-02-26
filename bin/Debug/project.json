@@ -1,110 +1,119 @@
 ﻿{
+	//线程池最大线程数
 	"MaxThreads": 30,
-	"AutoStart": true,
+	//实例列表
 	"SO": [
-		{
-			"Name": "mssql",
-			"Tip": "mssql数据库",
-			"Auto": 1,
-			"TypeName": "StateManager.SMConnectionMSSQL",
-			"ConnectionString": "Server=192.168.2.128\\s1;Database=SXWCS2;uid=sa;pwd=123456",
-			"ConnectionStringSimu": "Server=192.168.2.128\\s1;Database=SXWCS2;uid=sa;pwd=123456",
-			"Simulate": 0,
-			"ConnectionStringUsedEncrypt":false,
-			"ReConnectDelay":10000,
-		},
+	
+		//实例配置格式如下：
+		//{
+		//	"Name": "mssql",//实例名称， 必须项
+		//  "Tip":"微软数据库" //实例描述，非必须
+		//	"Auto": 1, //是否自动，自动代码是否自动执行，默认不自动，非必须
+		//	"TypeName": "SMConnectionMSSQL",//实例类型，需要有相应的C#类型实现代码（类库）、
+											//或脚本实现代码(Script目录下同名文件)， 必须项
+		//  "TypeFileName":"SMtest.dll", //指定实例类型的文件名，不指定时会自动搜索程序所在目录，非必须
+										 //用于区分重复类名时，可以指定文件名，也可以指定TypeName为附带程序集的全名
+		//  "Isolate":0, //是否以隔离模式运行，即通过远程代理的方式创建和执行实例代码，默认0，非必须
+		//  "StartState":"",//起始状态，默认为空，非必须
+		//  "StartStateWait":0,//起始状态延时时间（毫秒），默认值0，非必须		
+		//	其他属性由类型实现代码而定
+		//},
+		
+		//oracle连接示例
 		{
 			"Name": "oracle",
 			"Tip": "oracle数据库",
 			"Auto": 1,
-			"TypeName": "StateManager.SMConnectionORACLE",
+			"TypeName": "SMConnectionORACLE",
 			"ConnectionString":"Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.1.11)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=test)));Persist Security Info=True;User ID=sa;Password=123456;Connection Timeout=2;",
 			"ConnectionString":"HUdK5e/mwVUl061rVo5gltKNtoSbXe8jOYXmT3394GQhi4eEDASkdhQRmcD2SUmwcB65Agn/b18Mf1af6uTfdKKFDC6r/X1pAgw/3tMPfU34evLGxpg2Tia9YPG2/2lSiFh/LPfOWYkxGAGZgGhiCT8Y9JJJkvvfFOFvrRbPiVvXXsgV6krVJpKvPbcVi4MKOUQTkFrXry+iBwWB+1YS3zNZFqkQm7+PzJr6HCIXYROz2WAGetrnVFkDW0orUAWZhy6wICzIdGIspRw3Awdn3pF9mb2sF0hsWwaJPZAMUojx5gPCWp0W9NWeVAjaip6aZv50D0L9hi5nMnLlyy6atoVT4LnM+AfbMropPFVQ1xKBm443cD1IbU8sPhXKUURbdyhwLBMGZqBf4zb0csMcxadlhW5mfVyZZ4bsZVYxR5K6T/Vp4lS1QoZ/A459vCzP6omX+hOQ05WYM2EFmPFNvt8cNgwqI75/J7nJ1XTEcbVJ7V1+pHuoCbkKa/A+Ssyg",
 			"ConnectionStringSimu":"HUdK5e/mwVUl061rVo5gltKNtoSbXe8jOYXmT3394GQhi4eEDASkdhQRmcD2SUmwcB65Agn/b18Mf1af6uTfdKKFDC6r/X1pAgw/3tMPfU34evLGxpg2Tia9YPG2/2lSiFh/LPfOWYkxGAGZgGhiCT8Y9JJJkvvfFOFvrRbPiVvABMZ2+ni5mu+xt9d8iITM52WTvatreprSFWuDozZ08iWLe9IP7YmeDYV4uFVld/SBR1mu4G3B6yMZ2swpgv8feYBTasekPaCymMCA/vcZvx8mVs2r32Gk0VL5o+r1sJIY1JXkX8Ee3sdh1gmM4RKVnID5Idke3gdQHIPltsxrC3zi2L200wqLj6ITIakCfCVob0iJR8kHaHUoIkrmuToehjqPpSTI9UHnfB28Mze3U8O1f5ScaPDZ5XMm1C0+lfv45epmpnA/Xh2iwoQDjFnsgunJdqIulq32lexylY0NDdNs2Nah9KHralFU1w/Fs9l6JotsAhgugZdxGwCOFOqb",
-			"Simulate": 0,
-			"ConnectionStringUsedEncrypt":true,
-			"ReConnectDelay":10000,
+			"Simulate": 0,//连接类都有仿真开关，默认值0，当为0时ConnectionString有效（生产环境），当为1时ConnectionStringSimu有效（测试环境）
+			"ConnectionStringUsedEncrypt":true,//连接自符串是否加密
+			"ReConnectDelay":5000,//自动断线重连检测间隔时间
 		},
+		
+		//演示脚本里用到的微软数据库连接
+		{
+			"Name": "mssql",
+			"Auto": 1,
+			"TypeName": "SMConnectionMSSQL",
+			"ConnectionString": "Server=192.168.2.128\\s1;Database=Test;uid=sa;pwd=123456",//连接自符串
+		},
+		//演示脚本里用到的TCP连接
 		{
 			"Name": "TCP",
-			"Tip": "TCP测试",
 			"Auto": 1,
-			"TypeName": "StateManager.SMConnectionTCP",
-			"ConnectionString": "127.0.0.1:8080:",
-			"ConnectionStringSimu": "127.0.0.1:105",
-			"Simulate": 0,
-			"ConnectionStringUsedEncrypt":false,
-			"ReConnectDelay":10000,
+			"TypeName": "SMConnectionSocket",
+			"ConnectionString": "127.0.0.1:8080:Tcp:Syn",//SMConnectionSocket 连接字符串的格式，IP:端口:Tcp/Udp:Syn(同步方式)/Asyn(异步方式)，详见实现代码
+			"ReadTimeOut":5000
 		},
+		//演示脚本里用到的PLC连接
 		{
 			"Name": "PLC_S7",
-			"Tip": "西门子PLC",
+			"Tip": "西门子s7-1200设备",
 			"Auto": 1,
-			"TypeName": "StateManager.SMConnectionPLCS7",
-			"ConnectionString": "192.168.1.157:102:s1200",
-			"ConnectionStringSimu": "127.0.0.1:103:s1200",
-			"Simulate": 0,
-			"ConnectionStringUsedEncrypt":false,
-			"ReConnectDelay":10000,
-		},
-		{
-			"Name": "PLC_MC",
-			"Tip": "三菱PLC",
-			"Auto": 0,
-			"TypeName": "StateManager.SMConnectionPLCMC",
-			"ConnectionString": "192.168.3.39:8000",
-			"ConnectionStringSimu": "127.0.0.1:105",
-			"Simulate": 0,
-			"ConnectionStringUsedEncrypt":false,
-			"ReConnectDelay":10000,
-			"isolate":1
-		},
+			"TypeName": "SMConnectionHsl",
+			"ConnectionString": "192.168.2.1:102:SiemensS7Net:s1200",//SMConnectionHsl 连接字符串的格式，IP:端口:SiemensS7Net（西门子s7协议）/MelsecMcNet（三菱Mc协议设备）...:s1200/s1500...，详见实现代码
+		},		
+		//一款极为直观的连接管理界面，推荐使用
 		{
 			"Name":"连接管理",
-			"TypeName":"StateManager.SMConnectionAdminForm",
+			"TypeName":"SMConnectionAdminForm",
+			//想要在连接管理界面中显示的实例
 			"Connections":[
 				"mssql",
 				"oracle",
 				"TCP",
 				"PLC_S7",
-				"PLC_MC",
 			],
+			//是否显示在托盘图标的右键菜单中，SMcore.exe模式运行时有效
 			"ShowInTrayMenu":true,
 		},
+		//一款极为直观的实例管理界面，推荐使用
 		{
 			"Name":"执行控制",
-			"TypeName":"StateManager.SMAdminForm",
+			"TypeName":"SMAdminForm",
+			//不想显示在管理界面的中实例
 			"Hides":[
-				"mssql",
 				"oracle",
+				"mssql",
 				"TCP",
-				"PLC_S7",
-				"PLC_MC1",
 				"执行控制",
 				"连接管理",
 			],
 			"ShowInTrayMenu":true,
 		},
+		//一款极为好用的报警管理界面，推荐使用
 		{
 			"Auto": 0,
-			"Name":"报警信息",
-			"TypeName":"StateManager.SMAlarmForm",
+			"Name":"Alarm",
+			"Tip":"报警信息",
+			"TypeName":"SMAlarmForm",
+			//是否自动弹出报警处理界面
+			"IsAutoPopUp":1,
+			"ShowInTrayMenu":true,
 		},
+		
+		//演示脚本实例1
 		{
 			"Auto": 0,
-			"Name": "测试PLC",
-			"TypeName": "测试PLC",
+			"Name": "演示脚本实例1",
+			"TypeName": "demo-demo-components-using",
+			//程序会自动搜索到程序目录的Script/demo-demo-components-using.js
 		},
+		//演示脚本实例2
 		{
 			"Auto": 0,
-			"Name": "测试数据库",
-			"TypeName": "测试数据库",
+			"Name": "演示脚本实例2",
+			"TypeName": "demo-demo-components-using",
 		},
+		//演示程序实例
 		{
 			"Auto": 0,
-			"Name": "SMtest",
-			"TypeName": "StateManager.SMtest",
-			"Isolate":0
+			"Name": "演示程序实例",
+			"TypeName": "SMtest",
+			"TypeFileName":"SMtest.dll",
 		},
   ]
 }

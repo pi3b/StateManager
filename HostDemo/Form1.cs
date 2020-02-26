@@ -52,7 +52,7 @@ namespace StateManager
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SManager.GetSOObjectForm("报警信息").Show();
+            SManager.GetSOObjectForm("Alarm").Show();
         }
 
     }

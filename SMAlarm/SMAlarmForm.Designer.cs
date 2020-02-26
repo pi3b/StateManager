@@ -76,7 +76,7 @@
             this.清空ToolStripMenuItem,
             this.测试报警ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 92);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(125, 70);
             // 
             // 删除ToolStripMenuItem
             // 
@@ -95,7 +95,7 @@
             // 测试报警ToolStripMenuItem
             // 
             this.测试报警ToolStripMenuItem.Name = "测试报警ToolStripMenuItem";
-            this.测试报警ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.测试报警ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.测试报警ToolStripMenuItem.Text = "测试报警";
             this.测试报警ToolStripMenuItem.Click += new System.EventHandler(this.测试报警ToolStripMenuItem_Click);
             // 

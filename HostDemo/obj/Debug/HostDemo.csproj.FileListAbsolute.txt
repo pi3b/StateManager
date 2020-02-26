@@ -11,3 +11,4 @@ D:\Proj\StateManager\bin\Debug\HostDemo.pdb
 D:\Proj\StateManager\HostDemo\obj\Debug\StateManager.Properties.Resources.resources
 D:\Proj\StateManager\HostDemo\obj\Debug\HostDemo.exe
 D:\Proj\StateManager\HostDemo\obj\Debug\HostDemo.pdb
+D:\Proj\StateManager\HostDemo\obj\Debug\HostDemo.csprojResolveAssemblyReference.cache

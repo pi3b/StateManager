@@ -41,6 +41,8 @@ namespace StateManager
                     string FileterActive = "AND ACTIVE=1";
                     DB.GetDataTableStatic(ref sda, ref dt, string.Format("SELECT ID 序号,SONAME 工位,MSG 描述,ASKTIME 发生时间,REPLY 处理方式,REPLYTIME 处理时间,(CASE ACTIVE WHEN 1 THEN '是' ELSE ' ' END) 有效 FROM ALARM WHERE 1=1 {0} ORDER BY ID", FileterActive));
                     dataGridView1.DataSource = dt;
+                    dataGridView1.Columns["描述"].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                    dataGridView1.Columns["处理方式"].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
                     foreach (DataGridViewRow dr in dataGridView1.Rows)
                     {
                         //string ID = dr.Cells[0].Value.ToString();
@@ -59,6 +61,8 @@ namespace StateManager
                     string FileterActive = "";
                     DB.GetDataTableStatic(ref sda, ref dt, string.Format("SELECT ID 序号,SONAME 工位,MSG 描述,ASKTIME 发生时间,REPLY 处理方式,REPLYTIME 处理时间,(CASE ACTIVE WHEN 1 THEN '是' ELSE ' ' END) 有效 FROM ALARM WHERE 1=1 {0} ORDER BY ID", FileterActive));
                     dataGridView1.DataSource = dt;
+                    dataGridView1.Columns["描述"].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                    dataGridView1.Columns["处理方式"].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
                     foreach (DataGridViewRow dr in dataGridView1.Rows)
                     {
                         if (dr.Cells[6].Value.ToString() == "是")
@@ -96,7 +100,7 @@ namespace StateManager
 
         private void 测试报警ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddAlarm("SONAME", "TEST MSG", "选择项1,选择项2");
+            AddAlarm("SONAME", "State","TEST MSG", "选择项1,选择项2");
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -159,11 +163,12 @@ namespace StateManager
         }
         public void ShowReSolveFrom(int ID)
         {
-            string SONAME = "", MSG = "", ASK = "", ASKTIME = "", REPLY = "";
-            SQLiteDataReader Reader = DB.ReadReader(string.Format("SELECT SONAME,MSG,ASK,ASKTIME,REPLY,REPLYTIME FROM ALARM WHERE ID={0};", ID));
+            string SONAME = "",SOSTATE = "", MSG = "", ASK = "", ASKTIME = "", REPLY = "";
+            SQLiteDataReader Reader = DB.ReadReader(string.Format("SELECT SONAME,SOSTATE,MSG,ASK,ASKTIME,REPLY,REPLYTIME FROM ALARM WHERE ID={0};", ID));
             if (Reader.Read())
             {
                 SONAME = Reader["SONAME"].ToString();
+                SOSTATE = Reader["SOSTATE"].ToString();
                 MSG = Reader["MSG"].ToString();
                 ASK = Reader["ASK"].ToString();
                 ASKTIME = Reader["ASKTIME"].ToString();
@@ -171,7 +176,7 @@ namespace StateManager
             }
             Reader.Close();
             SMAlarmReplyForm AlarmReplyForm = new SMAlarmReplyForm();
-            AlarmReplyForm.SetData(SONAME, MSG, ASK, ASKTIME, REPLY);
+            AlarmReplyForm.SetData(SONAME,SOSTATE, MSG, ASK, ASKTIME, REPLY);
             if (AlarmReplyForm.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 REPLY = AlarmReplyForm.Result;
@@ -180,18 +185,41 @@ namespace StateManager
             AlarmReplyForm.Close();
         }
 
-        public void AddAlarm(string SONAME, string Msg, string Ask)
+        bool IsAutoPopUp = false;
+        object LockObj = new object();
+        /// <summary>
+        /// 添加报警信息
+        /// </summary>
+        /// <param name="SONAME">工位名称</param>
+        /// <param name="SOSTATE">工位状态</param>
+        /// <param name="Msg">提示信息</param>
+        /// <param name="Ask">逗号间隔的选项供用户选择</param>
+        public void AddAlarm(string SONAME, string SOSTATE, string Msg, string Ask)
         {
             DeActiveAlarm(SONAME);
-            DB.Excute(string.Format("INSERT INTO ALARM(SONAME,MSG,ASK,ASKTIME) VALUES('{0}','{1}','{2}',DATETIME());", SONAME, Msg, Ask));
+            DB.Excute(string.Format("INSERT INTO ALARM(SONAME,SOSTATE,MSG,ASK,ASKTIME) VALUES('{0}','{1}','{2}','{3}',DATETIME());", SONAME, SOSTATE, Msg, Ask));
             ReLoadList();
             int ID = (int)DB.ReadFirstValue(string.Format("SELECT ID FROM ALARM WHERE SONAME='{0}' AND ACTIVE=1 ORDER BY ID DESC;", SONAME));
-            ShowReSolveFrom(ID);
+            if (IsAutoPopUp)
+                lock (LockObj)
+                {
+                    ShowReSolveFrom(ID);
+                }
             ReLoadList();
+        }
+        /// <summary>
+        /// 添加报警信息
+        /// </summary>
+        /// <param name="so">状态机实例</param>
+        /// <param name="Msg">提示信息</param>
+        /// <param name="Ask">逗号间隔的选项供用户选择</param>
+        public void AddSOAlarm(SObject so, string Msg, string Ask)
+        {
+            AddAlarm(so.Name, so.State, Msg, Ask);
         }
         public string ReadAlarmReply(string SONAME)
         {
-            return (string)DB.ReadFirstValue(string.Format("SELECT REPLY FROM ALARM WHERE SONAME='{0}' AND ACTIVE=1 ORDER BY ID DESC;", SONAME));
+            return DB.ReadFirstValue(string.Format("SELECT REPLY FROM ALARM WHERE SONAME='{0}' AND ACTIVE=1 ORDER BY ID DESC;", SONAME)).ToString();
         }
         public void DeActiveAlarm(string SONAME)
         {
@@ -207,6 +235,8 @@ namespace StateManager
         }
         public void StateInit(SObject so)
         {
+            if (so.JObject.ContainsKey("IsAutoPopUp"))
+                IsAutoPopUp = (bool)so.JObject["IsAutoPopUp"];
         }
         public object Form
         {

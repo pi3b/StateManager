@@ -18,14 +18,17 @@ using System.Threading;
 namespace StateManager
 {
     [System.Runtime.InteropServices.ComVisible(true)]
-    public abstract class SMConnection :MarshalByRefObject, IState //各种连接的抽象基类
+    public abstract class SMConnection : IState //各种连接的抽象基类MarshalByRefObject
     {
-        SObject so;
-        public string ConnectionString;
-        public string ConnectionStringSimu;
+        public string v = "11";
+        public SObject so;
+        public string ConnectionString="";
+        public string ConnectionStringSimu="";
         public bool ConnectionStringUsedEncrypt=false;
-        public bool Simulate;
-        public int ReConnectDelay;
+        public bool Simulate=false;
+        public int ReConnectDelay = 10000;
+        public int ConnectTimeOut = 3000;
+        public int ReadTimeOut = 10000;
         public SMConnection()
         {
         }
@@ -54,7 +57,7 @@ namespace StateManager
             get { return connected; }
             set { connected = value; }
         }
-        public void Connect(int ConnectTimeOutMiliSecs = 1000, int ReadTimeOutMiliSecs = 3000)  //事务流用void抛异常更方便，可同时返回E.message、是否成功两个结果，同时可以向外部暴出系统异常。
+        public void Connect()  //事务流用void抛异常更方便，可同时返回E.message、是否成功两个结果，同时可以向外部暴出系统异常。
         {
             Connected = false;
             so.Status = "开始连接..";
@@ -62,7 +65,7 @@ namespace StateManager
 
             try
             {
-                DoConnect(UsedConnectionStr, ConnectTimeOutMiliSecs, ReadTimeOutMiliSecs);
+                DoConnect(UsedConnectionStr);
                 Connected = true;
                 so.Status = "已连接";
                 so.Update();
@@ -96,20 +99,27 @@ namespace StateManager
 
         public abstract void DoCreateConObj(string UsedConnectionStr);
 
-        public abstract void DoConnect(string UsedConnectionStr, int ConnectTimeOutMiliSecs = 1000, int ReadTimeOutMiliSecs = 3000);
+        public abstract void DoConnect(string UsedConnectionStr);
 
         public abstract void DoDisConnect();
 
         public void StateInit(SObject so)
         {
             this.so = so;
-            ConnectionString = so.JObject["ConnectionString"].ToString();
-            ConnectionStringSimu = so.JObject["ConnectionStringSimu"].ToString();
+            if (so.JObject.ContainsKey("ConnectionString"))
+                ConnectionString = so.JObject["ConnectionString"].ToString();
+            if (so.JObject.ContainsKey("ConnectionStringSimu"))
+                ConnectionStringSimu = so.JObject["ConnectionStringSimu"].ToString();
             if (so.JObject.ContainsKey("ConnectionStringUsedEncrypt"))
                 ConnectionStringUsedEncrypt = (bool)so.JObject["ConnectionStringUsedEncrypt"];
-            so.Auto = (bool)so.JObject["Auto"];
-            Simulate = (bool)so.JObject["Simulate"];
-            ReConnectDelay = (int)so.JObject["ReConnectDelay"];
+            if (so.JObject.ContainsKey("Simulate"))
+                Simulate = (bool)so.JObject["Simulate"];
+            if (so.JObject.ContainsKey("Simulate"))
+                ReConnectDelay = (int)so.JObject["ReConnectDelay"];
+            if (so.JObject.ContainsKey("ConnectTimeOut"))
+                ConnectTimeOut = (int)so.JObject["ConnectTimeOut"];
+            if (so.JObject.ContainsKey("ReadTimeOut"))
+                ReadTimeOut = (int)so.JObject["ReadTimeOut"];
             so.Status = "未连接";
             so.Update();
             Connected = false;
@@ -131,7 +141,7 @@ namespace StateManager
             switch (so.State)
             {
                 case "":
-                    so.SetNextState("网络检测", 0, "");
+                    so.SetNextState("网络检测", 0);
                     break;
                 case "网络检测":
                     if (!Connected)

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.labelSONAME = new System.Windows.Forms.Label();
@@ -36,14 +37,15 @@
             this.richTextBoxMSG = new System.Windows.Forms.RichTextBox();
             this.labelAlarmTime = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.labelSOState = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.listBox1);
-            this.groupBox1.Location = new System.Drawing.Point(3, 153);
+            this.groupBox1.Location = new System.Drawing.Point(4, 186);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -52,10 +54,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "选择处理方式：";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(9, 22);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(498, 148);
+            this.listBox1.TabIndex = 3;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1, 29);
+            this.label1.Location = new System.Drawing.Point(2, 62);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 16);
@@ -70,7 +81,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 16);
             this.label2.TabIndex = 4;
-            this.label2.Text = "报警工位:";
+            this.label2.Text = "报警位置:";
             // 
             // labelSONAME
             // 
@@ -86,7 +97,7 @@
             // buttonOK
             // 
             this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonOK.Location = new System.Drawing.Point(419, 339);
+            this.buttonOK.Location = new System.Drawing.Point(420, 372);
             this.buttonOK.Margin = new System.Windows.Forms.Padding(4);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(98, 43);
@@ -98,7 +109,7 @@
             // 
             // richTextBoxMSG
             // 
-            this.richTextBoxMSG.Location = new System.Drawing.Point(4, 49);
+            this.richTextBoxMSG.Location = new System.Drawing.Point(5, 82);
             this.richTextBoxMSG.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxMSG.Name = "richTextBoxMSG";
             this.richTextBoxMSG.Size = new System.Drawing.Size(513, 91);
@@ -110,7 +121,7 @@
             // 
             this.labelAlarmTime.AutoSize = true;
             this.labelAlarmTime.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelAlarmTime.Location = new System.Drawing.Point(299, 27);
+            this.labelAlarmTime.Location = new System.Drawing.Point(89, 34);
             this.labelAlarmTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAlarmTime.Name = "labelAlarmTime";
             this.labelAlarmTime.Size = new System.Drawing.Size(32, 16);
@@ -120,28 +131,42 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(297, 5);
+            this.label4.Location = new System.Drawing.Point(3, 34);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 16);
             this.label4.TabIndex = 8;
             this.label4.Text = "报警时间:";
             // 
-            // listBox1
+            // labelSOState
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(9, 22);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(498, 148);
-            this.listBox1.TabIndex = 3;
+            this.labelSOState.AutoSize = true;
+            this.labelSOState.BackColor = System.Drawing.Color.Lime;
+            this.labelSOState.Location = new System.Drawing.Point(316, 5);
+            this.labelSOState.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSOState.Name = "labelSOState";
+            this.labelSOState.Size = new System.Drawing.Size(32, 16);
+            this.labelSOState.TabIndex = 11;
+            this.labelSOState.Text = "XXX";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(269, 5);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 16);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "状态:";
             // 
             // SMAlarmReplyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(523, 395);
+            this.ClientSize = new System.Drawing.Size(531, 427);
+            this.Controls.Add(this.labelSOState);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.labelAlarmTime);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.richTextBoxMSG);
@@ -175,5 +200,7 @@
         private System.Windows.Forms.Label labelAlarmTime;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label labelSOState;
+        private System.Windows.Forms.Label label5;
     }
 }

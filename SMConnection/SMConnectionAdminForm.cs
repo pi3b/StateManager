@@ -65,7 +65,7 @@ namespace StateManager
         }
         public void DoUpdateOne(object obj,EventArgs e)
         {
-            if (InvokeRequired)
+            if (this.InvokeRequired)
             {
                 this.BeginInvoke((EventHandler)delegate
                 {
@@ -74,30 +74,38 @@ namespace StateManager
             }
             else
             {
-                SObject soo = obj as SObject;
-                SMConnection Con = so.Manager.GetSOObject(soo.Name) as SMConnection;
-                if (Con != null)
+                if (!Visible) return;
+                try
                 {
-                    foreach (DataGridViewRow dr in dataGridView1.Rows)
+                    SObject soo = obj as SObject;
+                    SMConnection Con = so.Manager.GetSOObject(soo.Name) as SMConnection;
+                    if (Con != null)
                     {
-                        if (dr.Tag.Equals(soo))
+                        foreach (DataGridViewRow dr in dataGridView1.Rows)
                         {
-                            dr.Cells[3].Value = Con.Simulate ? Con.ConnectionStringSimu : Con.ConnectionString;
-                            dr.Cells[4].Value = soo.Auto;
-                            dr.Cells[5].Value = Con.Simulate;
-                            dr.Cells[6].Value = soo.Status;
-                            if (soo.Status.Contains(".."))
+                            if (dr.Tag.Equals(soo))
                             {
-                                dr.Cells[6].Style.BackColor = Color.LightBlue;
+                                dr.Cells[3].Value = Con.Simulate ? Con.ConnectionStringSimu : Con.ConnectionString;
+                                dr.Cells[4].Value = soo.Auto;
+                                dr.Cells[5].Value = Con.Simulate;
+                                dr.Cells[6].Value = soo.Status;
+                                if (soo.Status !=null && soo.Status.Contains(".."))
+                                {
+                                    dr.Cells[6].Style.BackColor = Color.LightBlue;
+                                }
+                                else
+                                {
+                                    dr.Cells[6].Style.BackColor = Color.Empty;
+                                }
+                                dataGridView1.Refresh();
+                                break;
                             }
-                            else
-                            {
-                                dr.Cells[6].Style.BackColor = Color.Empty;
-                            }
-                            dataGridView1.Refresh();
-                            break;
                         }
                     }
+                }
+                catch (Exception E)
+                {
+
                 }
             }
         }
@@ -148,7 +156,7 @@ namespace StateManager
                     (so.Manager.GetSOObject(soo.Name) as SMConnection).Simulate = (bool)dataGridView1.Rows[e.RowIndex].Cells[5].Value;
                     soo.JObject["Auto"] = soo.Auto;
                     soo.JObject["Simulate"] = (so.Manager.GetSOObject(soo.Name) as SMConnection).Simulate;
-                    so.Update();
+                    soo.Update();
                 }
             }
             else
@@ -172,8 +180,6 @@ namespace StateManager
             }
 
             Name = (string)so.JObject["Tip"];
-            ReLoadList();
-
         }
 
         public void StateFInit(SObject so)
@@ -193,6 +199,11 @@ namespace StateManager
         {
             //自动重连功能写在连接基类中了，由各连接实例来实现多连接的同时进行，实现线程层面的面向对象）
             //return so;
+        }
+
+        private void SMConnectionAdminForm_Shown(object sender, EventArgs e)
+        {
+            ReLoadList();
         }
 
     }

@@ -16,10 +16,11 @@ namespace StateManager
         {
             InitializeComponent();
         }
-        public void SetData(string SONAME, string MSG, string ASK, string ASKTIME, string REPLY)
+        public void SetData(string SONAME, string SOSTATE, string MSG, string ASK, string ASKTIME, string REPLY)
         {
             string[] Asks = ASK.Split(new char[] { ',' });
             labelSONAME.Text = SONAME;
+            labelSOState.Text = SOSTATE;
             labelAlarmTime.Text = ASKTIME;
             richTextBoxMSG.Text = MSG;
             listBox1.Items.Clear();

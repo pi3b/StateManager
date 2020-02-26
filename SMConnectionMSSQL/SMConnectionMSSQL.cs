@@ -20,13 +20,14 @@ namespace StateManager
             Con = new SqlConnection(UsedConnectionStr);
         }
 
-        public override void DoConnect(string UsedConnectionStr, int ConnectTimeOutMiliSecs = 1000, int ReadTimeOutMiliSecs = 3000)
+        public override void DoConnect(string UsedConnectionStr)
         {
             try
             {
                 if(Con.State != ConnectionState.Closed)
                     Con.Close();
                 Con.ConnectionString = UsedConnectionStr;  // "server=127.0.0.1;database=User;uid=sa;pwd=123";
+                //Con.ConnectionTimeout = ConnectTimeOut;//只读，在连接字符串中定义
                 Con.Open();
                 if (Con.State != ConnectionState.Open)
                 {
@@ -75,8 +76,9 @@ namespace StateManager
             SqlDataReader Reader = ReadReader(Sql);
             if (Reader.Read())
             {
+                int V = Convert.ToInt32(Reader[0].ToString());
                 Reader.Close();
-                return Convert.ToInt32(Reader[0].ToString());
+                return V;
             }
             Reader.Close();
             throw new Exception("没有记录");
@@ -87,8 +89,9 @@ namespace StateManager
             string result = null;
             if (Reader.Read())
             {
+                string V = Reader[0].ToString();
                 Reader.Close();
-                result = Reader[0].ToString();
+                result = V;
             }
             Reader.Close();
             return result;
@@ -98,8 +101,9 @@ namespace StateManager
             SqlDataReader Reader = ReadReader(Sql);
             if (Reader.Read())
             {
+                DateTime D = (DateTime)Reader[0];
                 Reader.Close();
-                return (DateTime)Reader[0];
+                return D;
             }
             Reader.Close();
             throw new Exception("没有记录");

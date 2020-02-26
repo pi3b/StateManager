@@ -172,6 +172,7 @@ namespace StateManager
                 if (so.ScriptFile == "")
                     continue;
                 so.ResetScript = true;
+                so.RepeatState(0);
                 so.Update();
             }       
         }
@@ -285,7 +286,6 @@ namespace StateManager
         private void 启动ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             so.Manager.Paused = false;
-            so.Manager.JObject["AutoStart"] = !so.Manager.Paused;
             启动ToolStripMenuItem.Enabled = so.Manager.Paused;
             停止ToolStripMenuItem.Enabled = !so.Manager.Paused;
         }
@@ -293,7 +293,6 @@ namespace StateManager
         private void 停止ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             so.Manager.Paused = true;
-            so.Manager.JObject["AutoStart"] = !so.Manager.Paused;
             启动ToolStripMenuItem.Enabled = so.Manager.Paused;
             停止ToolStripMenuItem.Enabled = !so.Manager.Paused;
         }

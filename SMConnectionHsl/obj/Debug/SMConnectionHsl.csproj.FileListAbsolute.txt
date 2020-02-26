@@ -1,0 +1,5 @@
+D:\Proj\StateManager\bin\Debug\SMConnectionHsl.dll
+D:\Proj\StateManager\bin\Debug\SMConnectionHsl.pdb
+D:\Proj\StateManager\SMConnectionHsl\obj\Debug\SMConnectionHsl.dll
+D:\Proj\StateManager\SMConnectionHsl\obj\Debug\SMConnectionHsl.pdb
+D:\Proj\StateManager\SMConnectionHsl\obj\Debug\SMConnectionHsl.csprojResolveAssemblyReference.cache

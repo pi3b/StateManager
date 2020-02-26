@@ -24,7 +24,7 @@ namespace StateManager
             Con = new OracleConnection();
         }
 
-        public override void DoConnect(string UsedConnectionStr, int ConnectTimeOutMiliSecs = 1000, int ReadTimeOutMiliSecs = 3000)
+        public override void DoConnect(string UsedConnectionStr)
         {
             try
             {
@@ -83,8 +83,9 @@ namespace StateManager
             OracleDataReader Reader = ReadReader(Sql);
             if (Reader.Read())
             {
+                int V = Convert.ToInt32(Reader[0].ToString());
                 Reader.Close();
-                return Convert.ToInt32(Reader[0].ToString());
+                return V;
             }
             Reader.Close();
             throw new Exception("没有记录");
@@ -95,8 +96,9 @@ namespace StateManager
             string result = null;
             if (Reader.Read())
             {
+                string V = Reader[0].ToString();
                 Reader.Close();
-                result = Reader[0].ToString();
+                return V;
             }
             Reader.Close();
             return result;
@@ -106,8 +108,9 @@ namespace StateManager
             OracleDataReader Reader = ReadReader(Sql);
             if (Reader.Read())
             {
+                DateTime V = (DateTime)Reader[0];
                 Reader.Close();
-                return (DateTime)Reader[0];
+                return V;
             }
             Reader.Close();
             throw new Exception("没有记录");

@@ -30,10 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.连接 = new System.Windows.Forms.ToolStripMenuItem();
-            this.断开 = new System.Windows.Forms.ToolStripMenuItem();
-            this.重新加载ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,6 +37,10 @@
             this.Column10 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.连接 = new System.Windows.Forms.ToolStripMenuItem();
+            this.断开 = new System.Windows.Forms.ToolStripMenuItem();
+            this.重新加载ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -69,36 +69,6 @@
             this.dataGridView1.TabIndex = 33;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.连接,
-            this.断开,
-            this.重新加载ToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(125, 70);
-            // 
-            // 连接
-            // 
-            this.连接.Name = "连接";
-            this.连接.Size = new System.Drawing.Size(124, 22);
-            this.连接.Text = "连接";
-            this.连接.Click += new System.EventHandler(this.连接_Click);
-            // 
-            // 断开
-            // 
-            this.断开.Name = "断开";
-            this.断开.Size = new System.Drawing.Size(124, 22);
-            this.断开.Text = "断开";
-            this.断开.Click += new System.EventHandler(this.断开_Click);
-            // 
-            // 重新加载ToolStripMenuItem
-            // 
-            this.重新加载ToolStripMenuItem.Name = "重新加载ToolStripMenuItem";
-            this.重新加载ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.重新加载ToolStripMenuItem.Text = "重新加载";
-            this.重新加载ToolStripMenuItem.Click += new System.EventHandler(this.重新加载ToolStripMenuItem_Click);
             // 
             // Column1
             // 
@@ -157,15 +127,46 @@
             this.Column8.ReadOnly = true;
             this.Column8.Width = 78;
             // 
-            // SMConnectionForm
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.连接,
+            this.断开,
+            this.重新加载ToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(125, 70);
+            // 
+            // 连接
+            // 
+            this.连接.Name = "连接";
+            this.连接.Size = new System.Drawing.Size(124, 22);
+            this.连接.Text = "连接";
+            this.连接.Click += new System.EventHandler(this.连接_Click);
+            // 
+            // 断开
+            // 
+            this.断开.Name = "断开";
+            this.断开.Size = new System.Drawing.Size(124, 22);
+            this.断开.Text = "断开";
+            this.断开.Click += new System.EventHandler(this.断开_Click);
+            // 
+            // 重新加载ToolStripMenuItem
+            // 
+            this.重新加载ToolStripMenuItem.Name = "重新加载ToolStripMenuItem";
+            this.重新加载ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.重新加载ToolStripMenuItem.Text = "重新加载";
+            this.重新加载ToolStripMenuItem.Click += new System.EventHandler(this.重新加载ToolStripMenuItem_Click);
+            // 
+            // SMConnectionAdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 472);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "SMConnectionForm";
+            this.Name = "SMConnectionAdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "连接管理";
+            this.Shown += new System.EventHandler(this.SMConnectionAdminForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
