@@ -1,0 +1,11 @@
+C:\Users\123\Desktop\CardReader\test\bin\Debug\test.dll
+C:\Users\123\Desktop\CardReader\test\bin\Debug\test.pdb
+C:\Users\123\Desktop\CardReader\test\obj\Debug\test.dll
+C:\Users\123\Desktop\CardReader\test\obj\Debug\test.pdb
+C:\Users\123\Desktop\CardReader\test\bin\Debug\test.tlb
+D:\Proj\delphi访问net的com组件\bin\Debug\test.dll
+D:\Proj\delphi访问net的com组件\bin\Debug\test.pdb
+D:\Proj\delphi访问net的com组件\bin\Debug\test.tlb
+D:\Proj\delphi访问net的com组件\obj\Debug\test.csprojResolveAssemblyReference.cache
+D:\Proj\delphi访问net的com组件\obj\Debug\test.dll
+D:\Proj\delphi访问net的com组件\obj\Debug\test.pdb

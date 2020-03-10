@@ -108,12 +108,10 @@
 			"Name": "演示脚本实例2",
 			"TypeName": "demo-demo-components-using",
 		},
-		//演示程序实例
+		//演示HttpApi组件
 		{
-			"Auto": 0,
-			"Name": "演示程序实例",
-			"TypeName": "SMtest",
-			"TypeFileName":"SMtest.dll",
-		},
+			"Name": "HttpApi",
+			"TypeName": "SMHttpApi",
+		},		
   ]
 }

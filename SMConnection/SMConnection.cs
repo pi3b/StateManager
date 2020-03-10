@@ -20,7 +20,6 @@ namespace StateManager
     [System.Runtime.InteropServices.ComVisible(true)]
     public abstract class SMConnection : IState //各种连接的抽象基类MarshalByRefObject
     {
-        public string v = "11";
         public SObject so;
         public string ConnectionString="";
         public string ConnectionStringSimu="";

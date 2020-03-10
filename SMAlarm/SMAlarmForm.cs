@@ -21,8 +21,11 @@ namespace StateManager
         {
             InitializeComponent();
             DB = new SqliteFileDB();
-            string CurFileName = System.IO.Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            DB.Connect(System.IO.Path.ChangeExtension(CurFileName, ".db"));
+            string DllPath = Application.ExecutablePath;
+            string DBFileName = System.IO.Path.ChangeExtension(System.Reflection.Assembly.GetExecutingAssembly().Location, ".db");
+            if (!System.IO.File.Exists(DBFileName))
+                throw new Exception("找不到文件："+DBFileName);
+            DB.Connect(DBFileName);
         }
 
         public void ReLoadList()

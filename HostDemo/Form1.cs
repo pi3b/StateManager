@@ -17,7 +17,6 @@ namespace StateManager
         public Form1()
         {
             InitializeComponent();
-
             try
             {
                 //程序启动时，创建状态机对象

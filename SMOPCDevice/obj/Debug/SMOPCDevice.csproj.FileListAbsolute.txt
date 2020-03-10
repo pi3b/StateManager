@@ -1,0 +1,6 @@
+D:\Proj\StateManager\bin\Debug\SMOPCDevice.dll
+D:\Proj\StateManager\bin\Debug\SMOPCDevice.pdb
+D:\Proj\StateManager\bin\Debug\SMOPCDevice.tlb
+D:\Proj\StateManager\SMOPCDevice\obj\Debug\SMOPCDevice.dll
+D:\Proj\StateManager\SMOPCDevice\obj\Debug\SMOPCDevice.pdb
+D:\Proj\StateManager\SMOPCDevice\obj\Debug\SMOPCDevice.csprojResolveAssemblyReference.cache

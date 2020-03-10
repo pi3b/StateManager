@@ -1,0 +1,2 @@
+regasm test.dll
+pause

@@ -1,7 +1,7 @@
 ﻿function StateHandle(so){//状态处理函数，固定格式
 	switch(so.State){//判断状态	
 	case "":	//如果状态为空
-		so.SetNextState("访问TCP",0,"");//那么将在下一扫描周期进入状态：访问西门子PLC
+		so.SetNextState("访问Http",0,"");//那么将在下一扫描周期进入状态：访问西门子PLC
 		break;	
 		
 	case "访问西门子PLC":
@@ -85,6 +85,24 @@
 		else
 			so.RepeatState(1000,"等待人工处理报警");//重复当前状态，延时5秒执行
 		break;	
+		
+	case "访问Http":
+		var Http = so.Manager.GetSOObject("HttpApi");//获取HttpApi对象
+		//创建一个简单的HTTP服务
+		if(Http.ServerActive==false)
+		{	
+			Http.ServerPort=666;
+			Http.ServerStart();
+			this.Count=1;
+			alert("Start");
+		}
+		this.Count++;
+		//访问创建的HTTP
+		var txt = Http.HttpRequest("http://localhost:666","当前请求值："+this.Count);
+		alert(txt);
+		so.SetNextState("访问Http",1000);
+		
+		break;
 	}
 }
 

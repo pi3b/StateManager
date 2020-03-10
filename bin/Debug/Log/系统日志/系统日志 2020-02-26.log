@@ -1,276 +1,554 @@
-2020-02-26 20:09:01:780	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 12:03:15:082	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\演示脚本.js]错误：无法对 null 引用执行运行时绑定。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第4行3列
+描述：无法对 null 引用执行运行时绑定
+代码：-2146233088
+来源：Anonymously Hosted DynamicMethods Assembly
 内容：
-2020-02-26 20:09:11:889	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 12:03:25:084	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\演示脚本.js]错误：无法对 null 引用执行运行时绑定。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第4行3列
+描述：无法对 null 引用执行运行时绑定
+代码：-2146233088
+来源：Anonymously Hosted DynamicMethods Assembly
 内容：
-2020-02-26 20:09:21:904	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 12:03:35:086	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\演示脚本.js]错误：无法对 null 引用执行运行时绑定。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第4行3列
+描述：无法对 null 引用执行运行时绑定
+代码：-2146233088
+来源：Anonymously Hosted DynamicMethods Assembly
 内容：
-2020-02-26 20:09:31:919	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 12:03:45:087	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\演示脚本.js]错误：无法对 null 引用执行运行时绑定。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第4行3列
+描述：无法对 null 引用执行运行时绑定
+代码：-2146233088
+来源：Anonymously Hosted DynamicMethods Assembly
 内容：
-2020-02-26 20:09:41:934	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 12:03:55:089	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\演示脚本.js]错误：无法对 null 引用执行运行时绑定。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第4行3列
+描述：无法对 null 引用执行运行时绑定
+代码：-2146233088
+来源：Anonymously Hosted DynamicMethods Assembly
 内容：
-2020-02-26 20:09:51:950	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 12:04:05:091	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\演示脚本.js]错误：无法对 null 引用执行运行时绑定。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第4行3列
+描述：无法对 null 引用执行运行时绑定
+代码：-2146233088
+来源：Anonymously Hosted DynamicMethods Assembly
 内容：
-2020-02-26 20:10:01:965	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 12:04:15:092	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\演示脚本.js]错误：无法对 null 引用执行运行时绑定。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第4行3列
+描述：无法对 null 引用执行运行时绑定
+代码：-2146233088
+来源：Anonymously Hosted DynamicMethods Assembly
 内容：
-2020-02-26 20:10:11:980	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 12:04:25:093	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\演示脚本.js]错误：无法对 null 引用执行运行时绑定。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第4行3列
+描述：无法对 null 引用执行运行时绑定
+代码：-2146233088
+来源：Anonymously Hosted DynamicMethods Assembly
 内容：
-2020-02-26 20:10:21:995	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 12:04:29:771	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\演示脚本.js]错误：无法将带 [] 的索引应用于“int”类型的表达式。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第4行3列
+描述：无法将带 [] 的索引应用于“int”类型的表达式
+代码：-2146233088
+来源：Anonymously Hosted DynamicMethods Assembly
 内容：
-2020-02-26 20:10:32:010	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 12:04:31:370	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\演示脚本.js]错误：无法将带 [] 的索引应用于“int”类型的表达式。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第4行3列
+描述：无法将带 [] 的索引应用于“int”类型的表达式
+代码：-2146233088
+来源：Anonymously Hosted DynamicMethods Assembly
 内容：
-2020-02-26 20:10:42:026	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 12:04:41:371	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\演示脚本.js]错误：无法将带 [] 的索引应用于“int”类型的表达式。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第4行3列
+描述：无法将带 [] 的索引应用于“int”类型的表达式
+代码：-2146233088
+来源：Anonymously Hosted DynamicMethods Assembly
 内容：
-2020-02-26 20:10:52:072	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 12:04:51:372	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\演示脚本.js]错误：无法将带 [] 的索引应用于“int”类型的表达式。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第4行3列
+描述：无法将带 [] 的索引应用于“int”类型的表达式
+代码：-2146233088
+来源：Anonymously Hosted DynamicMethods Assembly
 内容：
-2020-02-26 20:11:02:087	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 12:05:01:374	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\演示脚本.js]错误：无法将带 [] 的索引应用于“int”类型的表达式。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第4行3列
+描述：无法将带 [] 的索引应用于“int”类型的表达式
+代码：-2146233088
+来源：Anonymously Hosted DynamicMethods Assembly
 内容：
-2020-02-26 20:11:12:102	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 12:05:11:375	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\演示脚本.js]错误：无法将带 [] 的索引应用于“int”类型的表达式。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第4行3列
+描述：无法将带 [] 的索引应用于“int”类型的表达式
+代码：-2146233088
+来源：Anonymously Hosted DynamicMethods Assembly
 内容：
-2020-02-26 20:11:22:118	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 12:05:21:377	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\演示脚本.js]错误：无法将带 [] 的索引应用于“int”类型的表达式。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第4行3列
+描述：无法将带 [] 的索引应用于“int”类型的表达式
+代码：-2146233088
+来源：Anonymously Hosted DynamicMethods Assembly
 内容：
-2020-02-26 20:11:32:148	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 17:52:55:263	系统日志		未处理的异常	实例：[最简单的演示]	状态：	信息：执行实例[最简单的演示]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-simple.js]错误：'Log' 未定义。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第6行2列
+描述：'Log' 未定义
+代码：5009
+来源：Microsoft JScript 运行时错误
 内容：
-2020-02-26 20:11:42:179	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 17:53:05:282	系统日志		未处理的异常	实例：[最简单的演示]	状态：	信息：执行实例[最简单的演示]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-simple.js]错误：'Log' 未定义。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第6行2列
+描述：'Log' 未定义
+代码：5009
+来源：Microsoft JScript 运行时错误
 内容：
-2020-02-26 20:11:52:195	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 17:53:42:102	系统日志		未处理的异常	实例：[最简单的演示]	状态：	信息：执行实例[最简单的演示]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-simple.js]错误：'Log' 未定义。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第6行2列
+描述：'Log' 未定义
+代码：5009
+来源：Microsoft JScript 运行时错误
 内容：
-2020-02-26 20:12:02:225	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 17:53:52:122	系统日志		未处理的异常	实例：[最简单的演示]	状态：	信息：执行实例[最简单的演示]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-simple.js]错误：'Log' 未定义。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第6行2列
+描述：'Log' 未定义
+代码：5009
+来源：Microsoft JScript 运行时错误
 内容：
-2020-02-26 20:12:12:256	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 17:54:20:184	系统日志		未处理的异常	实例：[最简单的演示]	状态：	信息：执行实例[最简单的演示]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-simple.js]错误：'Log' 未定义。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第6行2列
+描述：'Log' 未定义
+代码：5009
+来源：Microsoft JScript 运行时错误
 内容：
-2020-02-26 20:12:22:287	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 17:56:14:088	系统日志		未处理的异常	实例：[最简单的演示]	状态：	信息：执行实例[最简单的演示]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-simple.js]错误：'Log' 未定义。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第6行2列
+描述：'Log' 未定义
+代码：5009
+来源：Microsoft JScript 运行时错误
 内容：
-2020-02-26 20:12:32:318	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 17:56:26:377	系统日志		未处理的异常	实例：[最简单的演示]	状态：	信息：执行实例[最简单的演示]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-simple.js]错误：'Log' 未定义。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第6行2列
+描述：'Log' 未定义
+代码：5009
+来源：Microsoft JScript 运行时错误
 内容：
-2020-02-26 20:12:42:349	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 18:47:46:804	系统日志		未处理的异常	实例：[最简单的演示]	状态：	信息：执行实例[最简单的演示]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-simple.js]错误：未知名称。 (异常来自 HRESULT:0x80020006 (DISP_E_UNKNOWNNAME))。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第0行0列
+描述：
+代码：0
+来源：
 内容：
-2020-02-26 20:12:52:395	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 18:47:56:825	系统日志		未处理的异常	实例：[最简单的演示]	状态：	信息：执行实例[最简单的演示]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-simple.js]错误：未知名称。 (异常来自 HRESULT:0x80020006 (DISP_E_UNKNOWNNAME))。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第0行0列
+描述：
+代码：0
+来源：
 内容：
-2020-02-26 20:13:02:441	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：对象名 'Test' 无效。。
+2020-02-26 18:48:06:844	系统日志		未处理的异常	实例：[最简单的演示]	状态：	信息：执行实例[最简单的演示]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-simple.js]错误：未知名称。 (异常来自 HRESULT:0x80020006 (DISP_E_UNKNOWNNAME))。
 
-第26行4列
-描述：对象名 'Test' 无效。
-代码：-2146232060
-来源：.Net SqlClient Data Provider
+第0行0列
+描述：
+代码：0
+来源：
 内容：
-2020-02-26 20:13:43:672	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：Invalid attempt to call MetaData when reader is closed.。
+2020-02-26 18:49:39:626	系统日志		未处理的异常	实例：[最简单的演示]	状态：	信息：执行实例[最简单的演示]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-simple.js]错误：未知名称。 (异常来自 HRESULT:0x80020006 (DISP_E_UNKNOWNNAME))。
+
+第0行0列
+描述：
+代码：0
+来源：
+内容：
+2020-02-26 18:49:49:652	系统日志		未处理的异常	实例：[最简单的演示]	状态：	信息：执行实例[最简单的演示]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-simple.js]错误：未知名称。 (异常来自 HRESULT:0x80020006 (DISP_E_UNKNOWNNAME))。
+
+第0行0列
+描述：
+代码：0
+来源：
+内容：
+2020-02-26 18:49:59:690	系统日志		未处理的异常	实例：[最简单的演示]	状态：	信息：执行实例[最简单的演示]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-simple.js]错误：未知名称。 (异常来自 HRESULT:0x80020006 (DISP_E_UNKNOWNNAME))。
+
+第0行0列
+描述：
+代码：0
+来源：
+内容：
+2020-02-26 18:50:09:714	系统日志		未处理的异常	实例：[最简单的演示]	状态：	信息：执行实例[最简单的演示]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-simple.js]错误：未知名称。 (异常来自 HRESULT:0x80020006 (DISP_E_UNKNOWNNAME))。
+
+第0行0列
+描述：
+代码：0
+来源：
+内容：
+2020-02-26 20:14:45:517	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：阅读器关闭时尝试调用 CheckDataIsReady 无效。。
 
 第23行4列
-描述：Invalid attempt to call MetaData when reader is closed.
+描述：阅读器关闭时尝试调用 CheckDataIsReady 无效。
 代码：-2146233079
 来源：System.Data
 内容：
-2020-02-26 20:13:53:688	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：Invalid attempt to call MetaData when reader is closed.。
+2020-02-26 20:14:55:565	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：阅读器关闭时尝试调用 CheckDataIsReady 无效。。
 
 第23行4列
-描述：Invalid attempt to call MetaData when reader is closed.
+描述：阅读器关闭时尝试调用 CheckDataIsReady 无效。
 代码：-2146233079
 来源：System.Data
 内容：
-2020-02-26 20:14:03:703	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：Invalid attempt to call MetaData when reader is closed.。
+2020-02-26 20:15:05:618	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：阅读器关闭时尝试调用 CheckDataIsReady 无效。。
 
 第23行4列
-描述：Invalid attempt to call MetaData when reader is closed.
+描述：阅读器关闭时尝试调用 CheckDataIsReady 无效。
 代码：-2146233079
 来源：System.Data
 内容：
-2020-02-26 20:14:13:718	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：Invalid attempt to call MetaData when reader is closed.。
+2020-02-26 20:15:15:671	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：阅读器关闭时尝试调用 CheckDataIsReady 无效。。
 
 第23行4列
-描述：Invalid attempt to call MetaData when reader is closed.
+描述：阅读器关闭时尝试调用 CheckDataIsReady 无效。
 代码：-2146233079
 来源：System.Data
 内容：
-2020-02-26 20:14:23:733	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：Invalid attempt to call MetaData when reader is closed.。
+2020-02-26 20:15:25:720	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：阅读器关闭时尝试调用 CheckDataIsReady 无效。。
 
 第23行4列
-描述：Invalid attempt to call MetaData when reader is closed.
+描述：阅读器关闭时尝试调用 CheckDataIsReady 无效。
 代码：-2146233079
 来源：System.Data
 内容：
-2020-02-26 20:14:33:748	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：Invalid attempt to call MetaData when reader is closed.。
+2020-02-26 20:15:29:003	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：阅读器关闭时尝试调用 CheckDataIsReady 无效。。
 
 第23行4列
-描述：Invalid attempt to call MetaData when reader is closed.
+描述：阅读器关闭时尝试调用 CheckDataIsReady 无效。
 代码：-2146233079
 来源：System.Data
 内容：
-2020-02-26 21:11:28:867	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问mssql，信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+2020-02-26 20:15:39:049	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：阅读器关闭时尝试调用 CheckDataIsReady 无效。。
+
+第23行4列
+描述：阅读器关闭时尝试调用 CheckDataIsReady 无效。
+代码：-2146233079
+来源：System.Data
+内容：
+2020-02-26 20:15:49:093	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：阅读器关闭时尝试调用 CheckDataIsReady 无效。。
+
+第23行4列
+描述：阅读器关闭时尝试调用 CheckDataIsReady 无效。
+代码：-2146233079
+来源：System.Data
+内容：
+2020-02-26 20:17:01:659	系统日志		未处理的异常	实例：[演示脚本实例1]	状态：访问mssql	信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：阅读器关闭时尝试调用 CheckDataIsReady 无效。。
+
+第23行4列
+描述：阅读器关闭时尝试调用 CheckDataIsReady 无效。
+代码：-2146233079
+来源：System.Data
+内容：
+2020-02-26 20:22:18:785	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第25行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:22:28:790	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第25行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:22:38:794	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第25行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:22:48:797	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第25行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:22:58:801	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第25行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:23:08:805	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第25行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:23:15:649	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
 
 第26行4列
 描述：“=”附近有语法错误。
 代码：-2146232060
 来源：.Net SqlClient Data Provider
 内容：
-2020-02-26 21:11:58:876	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问mssql，信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+2020-02-26 20:23:24:432	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
 
 第26行4列
 描述：“=”附近有语法错误。
 代码：-2146232060
 来源：.Net SqlClient Data Provider
 内容：
-2020-02-26 23:10:09:300	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问TCP，信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：Cannot access a disposed object.
-Object name: 'System.Net.Sockets.Socket'.。
+2020-02-26 20:23:34:435	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:23:44:440	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:23:54:444	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:24:04:448	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:24:15:712	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:24:25:716	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:24:35:720	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:24:45:724	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:24:55:729	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:25:05:733	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:25:15:736	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:25:25:741	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:25:35:745	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:25:45:748	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:25:55:754	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:26:05:759	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:26:15:763	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:26:25:768	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:31:49:015	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:32:11:027	系统日志		未处理的异常	实例：[演示脚本实例2]	状态：访问mssql	信息：执行实例[演示脚本实例2]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:35:20:765	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问mssql，信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:36:35:323	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问mssql，信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:45:51:979	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问mssql，信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:46:22:077	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问mssql，信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 20:46:52:173	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问mssql，信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：“=”附近有语法错误。。
+
+第26行4列
+描述：“=”附近有语法错误。
+代码：-2146232060
+来源：.Net SqlClient Data Provider
+内容：
+2020-02-26 21:20:09:172	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问TCP-接收，信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：sqlite数据库未连接。
+
+第56行4列
+描述：sqlite数据库未连接
+代码：-2146233088
+来源：SMAlarm
+内容：
+2020-02-26 22:58:38:687	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问TCP，信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。。
 
 第38行3列
-描述：Cannot access a disposed object.
-Object name: 'System.Net.Sockets.Socket'.
+描述：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
 代码：-2146232798
 来源：System
 内容：
-2020-02-26 23:10:20:782	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问TCP，信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：Cannot access a disposed object.
-Object name: 'System.Net.Sockets.Socket'.。
+2020-02-26 22:58:55:163	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问TCP，信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。。
 
 第38行3列
-描述：Cannot access a disposed object.
-Object name: 'System.Net.Sockets.Socket'.
+描述：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
 代码：-2146232798
 来源：System
 内容：
-2020-02-26 23:10:22:919	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问TCP，信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：Cannot access a disposed object.
-Object name: 'System.Net.Sockets.Socket'.。
+2020-02-26 22:59:03:234	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问TCP，信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。。
 
 第38行3列
-描述：Cannot access a disposed object.
-Object name: 'System.Net.Sockets.Socket'.
+描述：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
 代码：-2146232798
 来源：System
 内容：
-2020-02-26 23:10:26:523	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问TCP，信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：Cannot access a disposed object.
-Object name: 'System.Net.Sockets.Socket'.。
+2020-02-26 22:59:10:934	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问TCP，信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。。
 
 第38行3列
-描述：Cannot access a disposed object.
-Object name: 'System.Net.Sockets.Socket'.
+描述：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
 代码：-2146232798
 来源：System
 内容：
-2020-02-26 23:10:27:630	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问TCP，信息：执行实例[演示脚本实例1]在脚本[C:\Users\123\Desktop\demo-demo-components-using\Script\demo-demo-components-using.js]错误：Cannot access a disposed object.
-Object name: 'System.Net.Sockets.Socket'.。
+2020-02-26 23:03:11:641	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问TCP，信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：你的主机中的软件中止了一个已建立的连接。。
 
 第38行3列
-描述：Cannot access a disposed object.
-Object name: 'System.Net.Sockets.Socket'.
-代码：-2146232798
+描述：你的主机中的软件中止了一个已建立的连接。
+代码：-2147467259
 来源：System
+内容：
+2020-02-26 23:45:17:543	系统日志		未处理的异常：实例：[演示脚本实例1]，状态：访问TCP-接收，信息：执行实例[演示脚本实例1]在脚本[D:\Proj\StateManager\bin\Debug\Script\demo-demo-components-using.js]错误：名为“序号”的列已属于此 DataTable。。
+
+第60行4列
+描述：名为“序号”的列已属于此 DataTable。
+代码：-2146232030
+来源：System.Data
 内容：
