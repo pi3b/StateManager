@@ -1,0 +1,6 @@
+D:\Proj\StateManager\bin\Debug\StateManager.exe
+D:\Proj\StateManager\bin\Debug\StateManager.pdb
+D:\Proj\StateManager\SMSystemTimeTool\obj\Debug\StateManager.SMSystemTimeToolForm.resources
+D:\Proj\StateManager\SMSystemTimeTool\obj\Debug\SMSystemTimeTool.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMSystemTimeTool\obj\Debug\StateManager.exe
+D:\Proj\StateManager\SMSystemTimeTool\obj\Debug\StateManager.pdb

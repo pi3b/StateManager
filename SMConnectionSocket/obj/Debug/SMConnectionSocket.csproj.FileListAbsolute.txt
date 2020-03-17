@@ -3,3 +3,8 @@ D:\Proj\StateManager\bin\Debug\SMConnectionSocket.pdb
 D:\Proj\StateManager\SMConnectionTCP\obj\Debug\SMConnectionSocket.csprojResolveAssemblyReference.cache
 D:\Proj\StateManager\SMConnectionTCP\obj\Debug\SMConnectionSocket.dll
 D:\Proj\StateManager\SMConnectionTCP\obj\Debug\SMConnectionSocket.pdb
+D:\Proj\StateManager-git\bin\Debug\SMConnectionSocket.dll
+D:\Proj\StateManager-git\bin\Debug\SMConnectionSocket.pdb
+D:\Proj\StateManager-git\SMConnectionSocket\obj\Debug\SMConnectionSocket.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager-git\SMConnectionSocket\obj\Debug\SMConnectionSocket.dll
+D:\Proj\StateManager-git\SMConnectionSocket\obj\Debug\SMConnectionSocket.pdb

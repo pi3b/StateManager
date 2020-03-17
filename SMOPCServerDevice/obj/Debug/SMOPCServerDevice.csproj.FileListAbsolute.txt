@@ -1,0 +1,9 @@
+D:\Proj\StateManager\SMOPCDevice\obj\Debug\SMOPCServerDevice.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMOPCDevice\obj\Debug\SMOPCDevice.dll
+D:\Proj\StateManager\SMOPCDevice\obj\Debug\SMOPCDevice.pdb
+D:\Proj\StateManager\SMOPCServerDevice\obj\Debug\SMOPCServerDevice.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\bin\Debug\SMOPCServerDevice.dll
+D:\Proj\StateManager\bin\Debug\SMOPCServerDevice.pdb
+D:\Proj\StateManager\bin\Debug\SMOPCServerDevice.tlb
+D:\Proj\StateManager\SMOPCServerDevice\obj\Debug\SMOPCServerDevice.dll
+D:\Proj\StateManager\SMOPCServerDevice\obj\Debug\SMOPCServerDevice.pdb

@@ -1,0 +1,7 @@
+D:\Proj\StateManager\bin\Debug\StateManager.pdb
+D:\Proj\StateManager\SMSystemTime\obj\Debug\StateManager.pdb
+D:\Proj\StateManager\bin\Debug\StateManager.exe
+D:\Proj\StateManager\SMSystemTime\obj\Debug\SMSystemTime.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMSystemTime\obj\Debug\StateManager.exe
+D:\Proj\StateManager\SMSystemTime\obj\Debug\StateManager.SystemTimeToolForm.resources
+D:\Proj\StateManager\SMSystemTime\obj\Debug\SMSystemTime.csprojResolveAssemblyReference.cache

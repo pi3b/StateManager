@@ -1,0 +1,12 @@
+D:\Proj\StateManager\bin\Debug\SMOPCClient.pdb
+D:\Proj\StateManager\SMOPC\obj\Debug\SMOPCClient.pdb
+D:\Proj\StateManager\SMOPC\obj\Debug\SMOPCClient.csproj.GenerateResource.Cache
+D:\Proj\StateManager\bin\Debug\SMOPCClient.exe
+D:\Proj\StateManager\SMOPC\obj\Debug\SMOPCClient.exe
+D:\Proj\StateManager\SMOPC\obj\Debug\SMOPCClient.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMOPC\obj\Debug\StateManager.SMOPCClientForm.resources
+D:\Proj\StateManager\SMOPCClient\obj\Debug\SMOPCClient.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMOPCClient\obj\Debug\StateManager.SMOPCClientForm.resources
+D:\Proj\StateManager\SMOPCClient\obj\Debug\SMOPCClient.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMOPCClient\obj\Debug\SMOPCClient.exe
+D:\Proj\StateManager\SMOPCClient\obj\Debug\SMOPCClient.pdb

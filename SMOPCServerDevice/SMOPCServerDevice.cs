@@ -10,7 +10,7 @@ using StateManager;
 namespace SMOPCDevice
 {
     [Guid("D3BA2ABA-93EF-4D6E-869B-004C4FE95ADD")]
-    public interface ISMOPCDevice
+    public interface ISMOPCServerDevice
     { 
         bool ItemIDAdd(string ItemID);
         bool ItemIDWriteAble(string ItemID);
@@ -23,14 +23,21 @@ namespace SMOPCDevice
 
     [Guid("25930171-2872-4EC3-A81B-0E11229501B0")]//如果不定义也是会自动生成的
     [ClassInterface(ClassInterfaceType.None)]//不为类生成类接口
-    public class SMOPCDevice : ISMOPCDevice
+    public class SMOPCServerDevice : ISMOPCServerDevice
     {
         Dictionary<string, SMOPCItem> Items = new Dictionary<string, SMOPCItem>();
         public SManager SManager;
-        public SMOPCDevice()
+        public SMOPCServerDevice()
         {
-            SManager = new SManager(Application.StartupPath+"\\SMOPCDevice.json");
-            SManager.Start();
+            try
+            {
+                SManager = new SManager(Application.StartupPath + "\\SMOPCServerDevice.json");
+                SManager.Start();
+            }
+            catch(Exception E)
+            {
+                MessageBox.Show("SMOPCServerDevice创建状态机时出错："+E.Message);
+            }
         }
         public bool ItemIDAdd(string ItemID)
         {
