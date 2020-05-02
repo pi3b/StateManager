@@ -1,0 +1,5 @@
+D:\Proj\StateManager\bin\Release\SMNTPTime.exe
+D:\Proj\StateManager\SMNTPTime\obj\Release\SMNTPTime.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMNTPTime\obj\Release\StateManager.SMNTPTimeForm.resources
+D:\Proj\StateManager\SMNTPTime\obj\Release\SMNTPTime.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMNTPTime\obj\Release\SMNTPTime.exe

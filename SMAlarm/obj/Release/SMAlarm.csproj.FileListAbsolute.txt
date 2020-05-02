@@ -1,0 +1,7 @@
+D:\Proj\StateManager\bin\Release\SMAlarm.dll.config
+D:\Proj\StateManager\bin\Release\SMAlarm.dll
+D:\Proj\StateManager\SMAlarm\obj\Release\SMAlarm.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMAlarm\obj\Release\StateManager.SMAlarmForm.resources
+D:\Proj\StateManager\SMAlarm\obj\Release\StateManager.SMAlarmReplyForm.resources
+D:\Proj\StateManager\SMAlarm\obj\Release\SMAlarm.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMAlarm\obj\Release\SMAlarm.dll

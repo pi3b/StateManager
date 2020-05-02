@@ -1,0 +1,10 @@
+D:\Proj\StateManager\SMNTPTime\bin\x86\Debug\SMNTPTime.exe
+D:\Proj\StateManager\SMNTPTime\bin\x86\Debug\SMNTPTime.pdb
+D:\Proj\StateManager\SMNTPTime\bin\x86\Debug\Newtonsoft.Json.dll
+D:\Proj\StateManager\SMNTPTime\bin\x86\Debug\SMCore.exe
+D:\Proj\StateManager\SMNTPTime\bin\x86\Debug\Interop.MSScriptControl.dll
+D:\Proj\StateManager\SMNTPTime\bin\x86\Debug\SMCore.pdb
+D:\Proj\StateManager\SMNTPTime\obj\x86\Debug\StateManager.SMNTPTimeForm.resources
+D:\Proj\StateManager\SMNTPTime\obj\x86\Debug\SMNTPTime.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMNTPTime\obj\x86\Debug\SMNTPTime.exe
+D:\Proj\StateManager\SMNTPTime\obj\x86\Debug\SMNTPTime.pdb

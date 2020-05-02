@@ -96,7 +96,7 @@ namespace StateManager
 
         void Print(string Str)
         {
-            SManager.TextBoxAutoScrollPrint(richTextBox1, Str);
+            SManager.TextBoxAutoScrollPrintLine(richTextBox1, Str);
         }
 
 

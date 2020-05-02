@@ -1,5 +1,7 @@
 D:\Proj\StateManager\bin\Debug\SMConnectionMSSQL.dll
 D:\Proj\StateManager\bin\Debug\SMConnectionMSSQL.pdb
-D:\Proj\StateManager\SMConnectionMSSQL\obj\Debug\SMConnectionMSSQL.csprojResolveAssemblyReference.cache
 D:\Proj\StateManager\SMConnectionMSSQL\obj\Debug\SMConnectionMSSQL.dll
 D:\Proj\StateManager\SMConnectionMSSQL\obj\Debug\SMConnectionMSSQL.pdb
+D:\Proj\StateManager\SMConnectionMSSQL\obj\Debug\SMConnectionMSSQL.csprojAssemblyReference.cache
+D:\Proj\StateManager\SMConnectionMSSQL\obj\Debug\SMConnectionMSSQL.csproj.CoreCompileInputs.cache
+D:\Proj\StateManager\SMConnectionMSSQL\obj\Debug\SMConnectionMSSQL.csproj.CopyComplete

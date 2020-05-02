@@ -42,18 +42,18 @@ namespace StateManager
                 {
                     if (!Visible) return;
                     //if (this.components == null || this.IsDisposed || !this.IsHandleCreated) return;
-                    string Info = so.Manager.GetThreadsInfo();
+                    string Info = so.SManager.GetThreadsInfo();
 
                     if (label1.Text != Info) label1.Text = Info;
-                    if (启动ToolStripMenuItem.Enabled != so.Manager.Paused)
-                        启动ToolStripMenuItem.Enabled = so.Manager.Paused;
-                    if (停止ToolStripMenuItem.Enabled != !so.Manager.Paused)
-                        停止ToolStripMenuItem.Enabled = !so.Manager.Paused;
+                    if (启动ToolStripMenuItem.Enabled != so.SManager.Paused)
+                        启动ToolStripMenuItem.Enabled = so.SManager.Paused;
+                    if (停止ToolStripMenuItem.Enabled != !so.SManager.Paused)
+                        停止ToolStripMenuItem.Enabled = !so.SManager.Paused;
                     //如果是初次加载，载入名称、描述
                     if (dataGridView1.RowCount == 0)
                     {
                         JArray hides = so.JObject["Hides"] as JArray;
-                        foreach (SObject s in so.Manager.SOs.Values)
+                        foreach (SObject s in so.SManager.SOs.Values)
                         {
                             var tmp = hides.Where(o =>
                             {
@@ -149,7 +149,7 @@ namespace StateManager
             foreach (DataGridViewRow dr in dataGridView1.SelectedRows)
             {
                 SObject so = dr.Tag as SObject;
-                so.SetNextState("", 0, "");
+                so.ResetState("");
                 so.Update();
             }       
         }
@@ -211,70 +211,26 @@ namespace StateManager
                 {
                     DataGridViewRow dr = dataGridView1.Rows[e.RowIndex];
                     SObject so = dr.Tag as SObject;
-                    Form Form = so.Manager.GetSOObject(so.Name) as Form;
+                    Form Form = so.SManager.GetSOObject(so.Name) as Form;
                     if (!(Form is Form))
                     {
                         MessageBox.Show("没有界面");
                         return;
                     }
-                    Form.StartPosition = FormStartPosition.CenterParent;
-                    Form.Show();
-                    Form.BringToFront();
-                    Form.WindowState = FormWindowState.Normal;
-
-                    #region MyRegion
-                    //现已支持手自一体，不需要修改模式了
-                    //bool oldAuto = so.Auto;
-                    //if (so.Auto)
-                    //{
-                    //    switch (MessageBox.Show("当前为自动模式，是否暂时切换为手动？", "注意", MessageBoxButtons.YesNoCancel))
-                    //    {
-                    //        case DialogResult.Yes:
-                    //            so.Auto = false;
-                    //            break;
-                    //        case DialogResult.No:
-                    //            break;
-                    //        case DialogResult.Cancel:
-                    //            return;
-                    //    }
-                    //}
-
-                    //if (so.Auto || so.Working) return;
-
-                    ////备份所有控件ENABLES状态
-                    //bool[] EnablesBakup;
-                    //EnablesBakup = new bool[so.StateForm.Controls.Count];
-                    //if (!so.Auto)
-                    //{
-                    //    so.StateForm.ShowDialog();
-                    //}
-                    //else
-                    //{
-                    //    for (int i = 0; i < so.StateForm.Controls.Count; i++)
-                    //    {
-                    //        EnablesBakup[i] = so.StateForm.Controls[i].Enabled;
-                    //    }
-                    //    //set false
-                    //    for (int i = 0; i < so.StateForm.Controls.Count; i++)
-                    //    {
-                    //        so.StateForm.Controls[i].Enabled = false;
-                    //    }
-
-                    //    if (so.StateForm != null)
-                    //        so.StateForm.ShowDialog();
-
-                    //    //恢复
-                    //    if (so.Auto)
-                    //    {
-                    //        for (int i = 0; i < so.StateForm.Controls.Count; i++)
-                    //        {
-                    //            so.StateForm.Controls[i].Enabled = EnablesBakup[i];
-                    //        }
-                    //    }
-                    //}
-
-                    //so.Auto = oldAuto; 
-                    #endregion
+                    Action action = new Action(()=>{
+                        Form.StartPosition = FormStartPosition.CenterParent;
+                        Form.Show();
+                        Form.BringToFront();
+                        Form.WindowState = FormWindowState.Normal;                        
+                    });
+                    if (Form.InvokeRequired)
+                    {
+                        Form.Invoke(action,new object[]{});
+                    }
+                    else
+                    {
+                        action();
+                    }
                 }
             }
             catch (Exception E)
@@ -285,16 +241,16 @@ namespace StateManager
 
         private void 启动ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            so.Manager.Paused = false;
-            启动ToolStripMenuItem.Enabled = so.Manager.Paused;
-            停止ToolStripMenuItem.Enabled = !so.Manager.Paused;
+            so.SManager.Paused = false;
+            启动ToolStripMenuItem.Enabled = so.SManager.Paused;
+            停止ToolStripMenuItem.Enabled = !so.SManager.Paused;
         }
 
         private void 停止ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            so.Manager.Paused = true;
-            启动ToolStripMenuItem.Enabled = so.Manager.Paused;
-            停止ToolStripMenuItem.Enabled = !so.Manager.Paused;
+            so.SManager.Paused = true;
+            启动ToolStripMenuItem.Enabled = so.SManager.Paused;
+            停止ToolStripMenuItem.Enabled = !so.SManager.Paused;
         }
 
         private void 延时toolStripComboBoxDelay_SelectedIndexChanged(object sender, EventArgs e)
@@ -304,13 +260,13 @@ namespace StateManager
             switch (延时toolStripComboBoxDelay.SelectedIndex)
             {
                 case 0:
-                    so.Manager.StateChangeDelay = 0;
+                    so.SManager.StateChangeDelay = 0;
                     break;
                 case 1:
-                    so.Manager.StateChangeDelay = 300;
+                    so.SManager.StateChangeDelay = 300;
                     break;
                 case 2:
-                    so.Manager.StateChangeDelay = 1000;
+                    so.SManager.StateChangeDelay = 1000;
                     break;
             }
         }
@@ -345,10 +301,10 @@ namespace StateManager
         public void StateInit(SObject so)
         {
             this.so = so;
-            Manager = so.Manager;
+            Manager = so.SManager;
             dataGridView1.Rows.Clear();
             //这里通过事件回调更新界面，也可以在StateHandle中状态处理中更新界面
-            so.Manager.OnStateHandleAll += DoUpdateAllSO;
+            so.SManager.OnStateHandleAll += DoUpdateAllSO;
         }
 
     }

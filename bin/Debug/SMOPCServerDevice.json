@@ -1,0 +1,11 @@
+﻿{
+	"SO": [
+		{
+			"Name": "PLC_S7",
+			"Tip": "西门子s7-1200设备",
+			"Auto": 1,
+			"TypeName": "SMConnectionHsl",
+			"ConnectionString": "192.168.2.1:102:SiemensS7Net:s1200",//SMConnectionHsl 连接字符串的格式，IP:端口:SiemensS7Net（西门子s7协议）/MelsecMcNet（三菱Mc协议设备）...:s1200/s1500...，详见实现代码
+		},		
+  ]
+}

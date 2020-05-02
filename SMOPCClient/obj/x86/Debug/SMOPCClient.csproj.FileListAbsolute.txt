@@ -1,0 +1,11 @@
+D:\Proj\StateManager\SMOPCClient\bin\x86\Debug\SMOPCClient.exe
+D:\Proj\StateManager\SMOPCClient\bin\x86\Debug\SMOPCClient.pdb
+D:\Proj\StateManager\SMOPCClient\bin\x86\Debug\Newtonsoft.Json.dll
+D:\Proj\StateManager\SMOPCClient\bin\x86\Debug\SMCore.exe
+D:\Proj\StateManager\SMOPCClient\bin\x86\Debug\Interop.MSScriptControl.dll
+D:\Proj\StateManager\SMOPCClient\bin\x86\Debug\SMCore.pdb
+D:\Proj\StateManager\SMOPCClient\obj\x86\Debug\SMOPCClient.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMOPCClient\obj\x86\Debug\StateManager.SMOPCClientForm.resources
+D:\Proj\StateManager\SMOPCClient\obj\x86\Debug\SMOPCClient.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMOPCClient\obj\x86\Debug\SMOPCClient.exe
+D:\Proj\StateManager\SMOPCClient\obj\x86\Debug\SMOPCClient.pdb

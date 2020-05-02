@@ -1,0 +1,3 @@
+D:\Proj\StateManager\bin\Release\SMOPCServerDevice.dll
+D:\Proj\StateManager\SMOPCServerDevice\obj\Release\SMOPCServerDevice.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMOPCServerDevice\obj\Release\SMOPCServerDevice.dll

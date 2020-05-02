@@ -1,0 +1,7 @@
+D:\Proj\StateManager\bin\Release\SMMQTT.exe.config
+D:\Proj\StateManager\bin\Release\SMMQTT.exe
+D:\Proj\StateManager\SMMQTT\obj\Release\SMMQTT.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMMQTT\obj\Release\StateManager.SMMQTTForm.resources
+D:\Proj\StateManager\SMMQTT\obj\Release\StateManager.Properties.Resources.resources
+D:\Proj\StateManager\SMMQTT\obj\Release\SMMQTT.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMMQTT\obj\Release\SMMQTT.exe

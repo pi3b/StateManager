@@ -1,0 +1,14 @@
+D:\Proj\StateManager\SMAlarm\bin\x86\Debug\SMAlarm.dll.config
+D:\Proj\StateManager\SMAlarm\bin\x86\Debug\SMAlarm.dll
+D:\Proj\StateManager\SMAlarm\bin\x86\Debug\SMAlarm.pdb
+D:\Proj\StateManager\SMAlarm\bin\x86\Debug\Newtonsoft.Json.dll
+D:\Proj\StateManager\SMAlarm\bin\x86\Debug\SMCore.exe
+D:\Proj\StateManager\SMAlarm\bin\x86\Debug\System.Data.SQLite.dll
+D:\Proj\StateManager\SMAlarm\bin\x86\Debug\Interop.MSScriptControl.dll
+D:\Proj\StateManager\SMAlarm\bin\x86\Debug\SMCore.pdb
+D:\Proj\StateManager\SMAlarm\obj\x86\Debug\SMAlarm.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMAlarm\obj\x86\Debug\StateManager.SMAlarmForm.resources
+D:\Proj\StateManager\SMAlarm\obj\x86\Debug\StateManager.SMAlarmReplyForm.resources
+D:\Proj\StateManager\SMAlarm\obj\x86\Debug\SMAlarm.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMAlarm\obj\x86\Debug\SMAlarm.dll
+D:\Proj\StateManager\SMAlarm\obj\x86\Debug\SMAlarm.pdb

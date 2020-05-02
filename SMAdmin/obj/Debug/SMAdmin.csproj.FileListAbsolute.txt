@@ -1,7 +1,9 @@
 D:\Proj\StateManager\bin\Debug\SMAdmin.dll
 D:\Proj\StateManager\bin\Debug\SMAdmin.pdb
-D:\Proj\StateManager\SMAdmin\obj\Debug\SMAdmin.csprojResolveAssemblyReference.cache
 D:\Proj\StateManager\SMAdmin\obj\Debug\StateManager.SMAdminForm.resources
 D:\Proj\StateManager\SMAdmin\obj\Debug\SMAdmin.csproj.GenerateResource.Cache
 D:\Proj\StateManager\SMAdmin\obj\Debug\SMAdmin.dll
 D:\Proj\StateManager\SMAdmin\obj\Debug\SMAdmin.pdb
+D:\Proj\StateManager\SMAdmin\obj\Debug\SMAdmin.csprojAssemblyReference.cache
+D:\Proj\StateManager\SMAdmin\obj\Debug\SMAdmin.csproj.CoreCompileInputs.cache
+D:\Proj\StateManager\SMAdmin\obj\Debug\SMAdmin.csproj.CopyComplete

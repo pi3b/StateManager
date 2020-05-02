@@ -20,4 +20,7 @@ D:\Proj\StateManager\SMHttpApi\obj\Debug\SMHttpApi.exe
 D:\Proj\StateManager\SMHttpApi\obj\Debug\SMHttpApi.pdb
 D:\Proj\StateManager\bin\Debug\SMHttpApi.exe
 D:\Proj\StateManager\bin\Debug\SMHttpApi.pdb
-D:\Proj\StateManager\SMHttpApi\obj\Debug\SMHttpApi.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\bin\Debug\SMHttpApi.exe.config
+D:\Proj\StateManager\SMHttpApi\obj\Debug\SMHTTPApi.csprojAssemblyReference.cache
+D:\Proj\StateManager\SMHttpApi\obj\Debug\SMHTTPApi.csproj.CoreCompileInputs.cache
+D:\Proj\StateManager\SMHttpApi\obj\Debug\SMHTTPApi.csproj.CopyComplete

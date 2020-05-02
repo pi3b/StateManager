@@ -1,0 +1,10 @@
+D:\Proj\StateManager\SMAdmin\bin\x86\Debug\SMAdmin.dll
+D:\Proj\StateManager\SMAdmin\bin\x86\Debug\SMAdmin.pdb
+D:\Proj\StateManager\SMAdmin\bin\x86\Debug\SMCore.exe
+D:\Proj\StateManager\SMAdmin\bin\x86\Debug\Interop.MSScriptControl.dll
+D:\Proj\StateManager\SMAdmin\bin\x86\Debug\SMCore.pdb
+D:\Proj\StateManager\SMAdmin\obj\x86\Debug\SMAdmin.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMAdmin\obj\x86\Debug\StateManager.SMAdminForm.resources
+D:\Proj\StateManager\SMAdmin\obj\x86\Debug\SMAdmin.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMAdmin\obj\x86\Debug\SMAdmin.dll
+D:\Proj\StateManager\SMAdmin\obj\x86\Debug\SMAdmin.pdb

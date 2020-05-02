@@ -1,0 +1,108 @@
+
+Request URL: http://192.168.1.1/api/dialup/mobile-dataswitch
+Request Method: POST
+Status Code: 200 OK
+Remote Address: 192.168.1.1:80
+Referrer Policy: no-referrer-when-downgrade
+Cache-Control: no-cache
+Connection: close
+Content-Length: 61
+Content-Type: text/html
+Date: Thu, 01 Jan 1970 00:00:00 GMT
+Server: mini_httpd/1.19 19dec2003
+__RequestVerificationToken: 1070047963
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+Connection: keep-alive
+Content-Length: 83
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Cookie: username=undefined
+Host: 192.168.1.1
+Origin: http://192.168.1.1
+Referer: http://192.168.1.1/html/home.html
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+X-Requested-With: XMLHttpRequest
+<?xml version: "1.0" encoding="UTF-8"?><request><dataswitch>1</dataswitch></request>
+
+OK
+
+
+Request URL: http://192.168.1.1/api/dialup/mobile-dataswitch
+Request Method: GET
+Status Code: 200 OK
+Remote Address: 192.168.1.1:80
+Referrer Policy: no-referrer-when-downgrade
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 85
+Content-Type: text/html
+Date: Thu, 01 Jan 1970 00:00:00 GMT
+Keep-Alive: timeout=10, max=100
+Server: mini_httpd/1.19 19dec2003
+__RequestVerificationToken: 1070047963
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+Connection: keep-alive
+Cookie: username=undefined
+Host: 192.168.1.1
+Referer: http://192.168.1.1/html/home.html
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+X-Requested-With: XMLHttpRequest
+
+1
+
+
+Request URL: http://192.168.1.1/api/dialup/mobile-dataswitch
+Request Method: POST
+Status Code: 200 OK
+Remote Address: 192.168.1.1:80
+Referrer Policy: no-referrer-when-downgrade
+Cache-Control: no-cache
+Connection: close
+Content-Length: 61
+Content-Type: text/html
+Date: Thu, 01 Jan 1970 00:00:00 GMT
+Server: mini_httpd/1.19 19dec2003
+__RequestVerificationToken: 1070047963
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+Connection: keep-alive
+Content-Length: 83
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Cookie: username=undefined
+Host: 192.168.1.1
+Origin: http://192.168.1.1
+Referer: http://192.168.1.1/html/home.html
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+X-Requested-With: XMLHttpRequest
+<?xml version: "1.0" encoding="UTF-8"?><request><dataswitch>0</dataswitch></request>
+
+OK
+
+Request URL: http://192.168.1.1/api/dialup/mobile-dataswitch
+Request Method: GET
+Status Code: 200 OK
+Remote Address: 192.168.1.1:80
+Referrer Policy: no-referrer-when-downgrade
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 85
+Content-Type: text/html
+Date: Thu, 01 Jan 1970 00:00:00 GMT
+Keep-Alive: timeout=10, max=100
+Server: mini_httpd/1.19 19dec2003
+__RequestVerificationToken: 1070047963
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+Connection: keep-alive
+Cookie: username=undefined
+Host: 192.168.1.1
+Referer: http://192.168.1.1/html/home.html
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+X-Requested-With: XMLHttpRequest
+
+0

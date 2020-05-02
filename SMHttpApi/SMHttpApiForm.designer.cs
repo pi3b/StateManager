@@ -1,6 +1,6 @@
 ﻿namespace StateManager
 {
-    partial class SMHttpApiForm
+    partial class SMHTTPApiForm
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -106,7 +106,7 @@
             this.textBoxClientSendData.Name = "textBoxClientSendData";
             this.textBoxClientSendData.Size = new System.Drawing.Size(781, 123);
             this.textBoxClientSendData.TabIndex = 4;
-            this.textBoxClientSendData.Text = "{action:\"jk_lsccartout\",pos:1}";
+            this.textBoxClientSendData.Text = "{\"action\":\"jk_lsccartout\",\"pos\":1}";
             // 
             // tabControl1
             // 
@@ -309,13 +309,13 @@
             this.buttonServerStart.UseVisualStyleBackColor = true;
             this.buttonServerStart.Click += new System.EventHandler(this.buttonServerStart_Click);
             // 
-            // SMHttpApiForm
+            // SMHTTPApiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(944, 581);
             this.Controls.Add(this.tabControl1);
-            this.Name = "SMHttpApiForm";
+            this.Name = "SMHTTPApiForm";
             this.Text = "HttpApi测试工具";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

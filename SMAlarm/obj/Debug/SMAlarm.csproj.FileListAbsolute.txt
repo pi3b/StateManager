@@ -1,9 +1,11 @@
 D:\Proj\StateManager\bin\Debug\SMAlarm.dll.config
 D:\Proj\StateManager\bin\Debug\SMAlarm.dll
 D:\Proj\StateManager\bin\Debug\SMAlarm.pdb
-D:\Proj\StateManager\SMAlarm\obj\Debug\SMAlarm.csprojResolveAssemblyReference.cache
 D:\Proj\StateManager\SMAlarm\obj\Debug\StateManager.SMAlarmForm.resources
 D:\Proj\StateManager\SMAlarm\obj\Debug\StateManager.SMAlarmReplyForm.resources
 D:\Proj\StateManager\SMAlarm\obj\Debug\SMAlarm.csproj.GenerateResource.Cache
 D:\Proj\StateManager\SMAlarm\obj\Debug\SMAlarm.dll
 D:\Proj\StateManager\SMAlarm\obj\Debug\SMAlarm.pdb
+D:\Proj\StateManager\SMAlarm\obj\Debug\SMAlarm.csprojAssemblyReference.cache
+D:\Proj\StateManager\SMAlarm\obj\Debug\SMAlarm.csproj.CoreCompileInputs.cache
+D:\Proj\StateManager\SMAlarm\obj\Debug\SMAlarm.csproj.CopyComplete

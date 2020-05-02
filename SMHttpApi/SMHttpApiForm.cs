@@ -15,14 +15,18 @@ using Newtonsoft.Json;
 namespace StateManager
 {
     [System.Runtime.InteropServices.ComVisible(true)]
-    public partial class SMHttpApiForm:Form,IState
+    public partial class SMHTTPApiForm:Form,IState
     {
-        public SMHttpApiForm()
+        public SMHTTPApiForm()
         {
             InitializeComponent();
+            //textBoxUrl.Text = "https://9ltokyfn.lc-cn-e1-shared.com/1.1/classes/Post/";
+            ////textBoxUrl.Text = "http://api-gateway.bmob.site/1/classes/abc";
+            textBoxUrl.Text = "https://api2.bmob.cn/1/classes/GameScore";
         }
 
         #region 客户端
+
 
         /// <summary>
         /// HttpRequest获取或提交 
@@ -32,22 +36,37 @@ namespace StateManager
         /// <param name="method">GET或POST</param>
         /// <param name="timeout">超时时间，毫秒</param>
         /// <returns></returns>
-        public string HttpRequest(string url, string postData = "", string method = "POST", int timeout = 5000)
+        public string HttpRequest(string url, string postData = "", string method = "POST", int timeout = 5000, System.Collections.Specialized.NameValueCollection headers=null)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Proxy = null;
+            if (url.StartsWith("https", StringComparison.OrdinalIgnoreCase))
+            {
+                ServicePointManager.DefaultConnectionLimit = 100;
+                ServicePointManager.ServerCertificateValidationCallback = new System.Net.Security.RemoteCertificateValidationCallback(SecurityValidate);
+                request.ProtocolVersion = HttpVersion.Version11;
+            }
             request.Method = method;
             request.Timeout = timeout;
             //request.ContentType = "text/html;charset=UTF-8";
             request.ContentType = "application/json;charset=UTF-8";
             //request.TransferEncoding = Encoding.UTF8;
             request.UserAgent = "Mozilla/5.0 (Windows NT 6.1; rv:19.0) Gecko/20100101 Firefox/19.0";
+
             //request.ContentLength = postdatabyte.Length;
             //request.AllowAutoRedirect = false;
             //request.KeepAlive = false;
+            //request.ContentType = "application/json";
+            request.Headers["Cache-Control"] = "no-cache";
+            if(headers!=null)
+                request.Headers.Add(headers);
+
+
             switch (method)
             {
                 //GET时不需要写参数
                 case "POST":
+                case "PUT":
                     using (StreamWriter dataStream = new StreamWriter(request.GetRequestStream()))
                     {
                         dataStream.Write(postData);
@@ -81,6 +100,36 @@ namespace StateManager
             }
 
             return retString;
+        }
+
+        static bool SecurityValidate(object sender,
+                               System.Security.Cryptography.X509Certificates.X509Certificate certificate,
+                               System.Security.Cryptography.X509Certificates.X509Chain chain,
+                               System.Net.Security.SslPolicyErrors errors)
+        {
+            //直接确认，不然打不开，会出现超时错误
+            return true;
+        }
+
+        public string BmobApplicationId;//"78753b39d4022a488974ee30163dfacb"
+        public string BmobApiKey;//"53483fd8f029a38eaa11e2cb0eb18139"
+        public string BmobUrl = "https://api2.bmob.cn/1/";
+        public string BmobHttpRequest(string classes_classname_obj, string postData = "", string method = "POST", int timeout = 5000)
+        {
+            System.Collections.Specialized.NameValueCollection headers = new System.Collections.Specialized.NameValueCollection();
+
+
+            //request.Headers["X-LC-Id"] = "VPRS9OQLMFJXpDDA64p8hOEb-gzGzoHsz";
+            //request.Headers["X-LC-Key"] = "hx6C48IEIRL5WviOKKDTxN65";
+
+            //request.Headers["x-avoscloud-application-id"] = "VPRS9OQLMFJXpDDA64p8hOEb-gzGzoHsz";
+            //request.Headers["x-avoscloud-application-key"] = "hx6C48IEIRL5WviOKKDTxN65";
+
+            headers["X-Bmob-Application-Id"] = BmobApplicationId;
+            headers["X-Bmob-REST-API-Key"] = BmobApiKey;
+
+            return HttpRequest(BmobUrl + classes_classname_obj,
+                postData, method, timeout, headers);
         }
 
         public bool ClientViewMode = false;
@@ -161,11 +210,6 @@ namespace StateManager
             HttpListenerRequest request = context.Request;  //接收的request数据
             HttpListenerResponse response = context.Response;  //用来向客户端发送回复
 
-            //response.ContentType = "text/html; charset=UTF-8";
-            response.ContentType = "application/json";
-            response.ContentEncoding = Encoding.UTF8;
-            response.StatusCode = 200;//设置返回给客服端http状态代码
-            response.AppendHeader("Access-Control-Allow-Origin", "*");
             string postData = string.Empty;
             using (StreamReader reader = new StreamReader(request.InputStream, request.ContentEncoding))
             {
@@ -188,7 +232,7 @@ namespace StateManager
 
                 if (ServerOnHandleRequests != null)
                 {
-                    rString = ServerOnHandleRequests(request, postData);
+                    rString = ServerOnHandleRequests(request, postData);//处理函数
                 }
                 else
                 {
@@ -199,16 +243,54 @@ namespace StateManager
                 SManager.SetText(textBoxServerResponse, rString, true);
             }
 
+            //string a = string.Join(",", request.QueryString.AllKeys);
+            //MessageBox.Show(a);
+            string requestFile = request.RawUrl.Split('?')[0];//域名后带/的内容
+            requestFile = Application.StartupPath + requestFile.Replace('/','\\');
 
-            using (Stream output = response.OutputStream)  //发送回复
+            if (File.Exists(requestFile))//如果有对应的文件，直接把文件抛过去
             {
-                byte[] buffer = Encoding.UTF8.GetBytes(rString);
-                try
+                //不填ContentType，自动的情况下，浏览器可正常显示
+                //switch (Path.GetExtension(requestFile))
+                //{
+                //    case "":
+                //        response.ContentType = "text/html; charset=UTF-8";
+                //        break;
+                //    case "":
+                //        break;
+                //    response.ContentType = "text/html; charset=UTF-8";
+                //}
+                //response.ContentEncoding = Encoding.UTF8;
+                response.StatusCode = 200;//设置返回给客服端http状态代码
+                response.AppendHeader("Access-Control-Allow-Origin", "*");
+                using (Stream output = response.OutputStream)  //发送回复
                 {
-                    output.Write(buffer, 0, buffer.Length);
-                    output.Close();
+                    try
+                    {
+                        using (FileStream fs = File.Open(requestFile, FileMode.Open))
+                        {
+                            fs.CopyTo(output);
+                        }
+                    }
+                    catch { }
                 }
-                catch { }
+            }
+            else
+            {
+                response.ContentType = "application/json";
+                response.ContentEncoding = Encoding.UTF8;
+                response.StatusCode = 200;//设置返回给客服端http状态代码
+                response.AppendHeader("Access-Control-Allow-Origin", "*");
+
+                using (Stream output = response.OutputStream)  //发送回复
+                {
+                    try
+                    {
+                        byte[] buffer = Encoding.UTF8.GetBytes(rString);
+                        output.Write(buffer, 0, buffer.Length);
+                    }
+                    catch { }
+                }
             }
             response.Close();
         }
@@ -281,7 +363,21 @@ namespace StateManager
 
         void IState.StateHandle(ref SObject so)
         {
-
+            switch (so.State)
+            {
+                case "":
+                    so.SetNextState("开启HTTP服务");
+                    break;
+                case "开启HTTP服务":
+                    if (!ServerActive)
+                    {
+                        if (so.JObject.ContainsKey("ServerPort"))
+                            ServerPort = (int)so.JObject["ServerPort"];
+                        ServerStart();
+                    }
+                    so.RepeatState(10000);
+                    break;
+            }
         }
 
         void IState.StateInit(SObject so)
@@ -290,6 +386,11 @@ namespace StateManager
         }
 
 
+
+    }
+    [System.Runtime.InteropServices.ComVisible(true)]
+    public class SMHTTPApi : SMHTTPApiForm
+    {
 
     }
 }

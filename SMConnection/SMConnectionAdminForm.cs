@@ -47,8 +47,8 @@ namespace StateManager
                 dr.Cells[0].Value = soo.Name;
                 dr.Cells[1].Value = soo.Tip;
                 dr.Cells[2].Value = soo.TypeName;
-                if (!(soo.Manager.GetSOObject(soo.Name) is SMConnection)) continue;
-                SMConnection Con = soo.Manager.GetSOObject(soo.Name) as SMConnection;
+                if (!(soo.SManager.GetSOObject(soo.Name) is SMConnection)) continue;
+                SMConnection Con = soo.SManager.GetSOObject(soo.Name) as SMConnection;
                 dr.Cells[3].Value = Con.Simulate ? Con.ConnectionStringSimu : Con.ConnectionString;
                 dr.Cells[4].Value = soo.Auto;
                 dr.Cells[5].Value = Con.Simulate;
@@ -78,7 +78,7 @@ namespace StateManager
                 try
                 {
                     SObject soo = obj as SObject;
-                    SMConnection Con = so.Manager.GetSOObject(soo.Name) as SMConnection;
+                    SMConnection Con = so.SManager.GetSOObject(soo.Name) as SMConnection;
                     if (Con != null)
                     {
                         foreach (DataGridViewRow dr in dataGridView1.Rows)
@@ -103,7 +103,7 @@ namespace StateManager
                         }
                     }
                 }
-                catch (Exception E)
+                catch
                 {
 
                 }
@@ -118,7 +118,7 @@ namespace StateManager
                 {
                     try
                     {
-                        (so.Manager.GetSOObject(soo.Name) as SMConnection).Connect();
+                        (so.SManager.GetSOObject(soo.Name) as SMConnection).Connect();
                     }
                     catch
                     {
@@ -135,7 +135,7 @@ namespace StateManager
                 {
                     try
                     {
-                        (so.Manager.GetSOObject(soo.Name) as SMConnection).DisConnect();
+                        (so.SManager.GetSOObject(soo.Name) as SMConnection).DisConnect();
                     }
                     catch
                     {
@@ -153,9 +153,9 @@ namespace StateManager
                 if (soo != null)
                 {
                     soo.Auto = (bool)dataGridView1.Rows[e.RowIndex].Cells[4].Value;
-                    (so.Manager.GetSOObject(soo.Name) as SMConnection).Simulate = (bool)dataGridView1.Rows[e.RowIndex].Cells[5].Value;
+                    (so.SManager.GetSOObject(soo.Name) as SMConnection).Simulate = (bool)dataGridView1.Rows[e.RowIndex].Cells[5].Value;
                     soo.JObject["Auto"] = soo.Auto;
-                    soo.JObject["Simulate"] = (so.Manager.GetSOObject(soo.Name) as SMConnection).Simulate;
+                    soo.JObject["Simulate"] = (so.SManager.GetSOObject(soo.Name) as SMConnection).Simulate;
                     soo.Update();
                 }
             }
@@ -172,9 +172,9 @@ namespace StateManager
             this.so = so;
             foreach (JToken jO in so.JObject["Connections"])
             {
-                SObject conso = so.Manager.SOs[(string)jO] as SObject;
-                if (conso == null)
+                if (!so.SManager.SOs.ContainsKey((string)jO))
                     throw new Exception(string.Format("连接管理中的[{0}]没有定义!", (string)jO));
+                SObject conso = so.SManager.SOs[(string)jO] as SObject;
 
                 conSOs.Add((string)jO, conso);
             }

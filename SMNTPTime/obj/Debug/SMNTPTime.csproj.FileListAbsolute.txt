@@ -2,10 +2,12 @@ D:\Proj\StateManager\SMSystemTimeTool\obj\Debug\StateManager.SMNTPTimeForm.resou
 D:\Proj\StateManager\SMSystemTimeTool\obj\Debug\SMNTPTime.csproj.GenerateResource.Cache
 D:\Proj\StateManager\SMSystemTimeTool\obj\Debug\StateManager.exe
 D:\Proj\StateManager\SMSystemTimeTool\obj\Debug\StateManager.pdb
-D:\Proj\StateManager\SMNTPTime\obj\Debug\SMNTPTime.csprojResolveAssemblyReference.cache
 D:\Proj\StateManager\SMNTPTime\obj\Debug\StateManager.SMNTPTimeForm.resources
 D:\Proj\StateManager\SMNTPTime\obj\Debug\SMNTPTime.csproj.GenerateResource.Cache
 D:\Proj\StateManager\bin\Debug\SMNTPTime.exe
 D:\Proj\StateManager\bin\Debug\SMNTPTime.pdb
 D:\Proj\StateManager\SMNTPTime\obj\Debug\SMNTPTime.exe
 D:\Proj\StateManager\SMNTPTime\obj\Debug\SMNTPTime.pdb
+D:\Proj\StateManager\SMNTPTime\obj\Debug\SMNTPTime.csprojAssemblyReference.cache
+D:\Proj\StateManager\SMNTPTime\obj\Debug\SMNTPTime.csproj.CoreCompileInputs.cache
+D:\Proj\StateManager\SMNTPTime\obj\Debug\SMNTPTime.csproj.CopyComplete

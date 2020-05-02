@@ -1,0 +1,2 @@
+2020-03-17 08:37:08:992	系统日志		未处理的异常：实例：[OPCClientTest]，状态：，信息：服务器出现意外情况。 (异常来自 HRESULT:0x80010105 (RPC_E_SERVERFAULT))
+2020-03-17 08:46:21:119	系统日志		未处理的异常：实例：[OPCClientTest]，状态：，信息：服务器出现意外情况。 (异常来自 HRESULT:0x80010105 (RPC_E_SERVERFAULT))

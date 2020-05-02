@@ -3,6 +3,8 @@ D:\Proj\StateManager\SMConnectionaaa\obj\Debug\SMtest.dll
 D:\Proj\StateManager\SMConnectionaaa\obj\Debug\SMtest.pdb
 D:\Proj\StateManager\bin\Debug\SMtest.dll
 D:\Proj\StateManager\bin\Debug\SMtest.pdb
-D:\Proj\StateManager\SMTest\obj\Debug\SMtest.csprojResolveAssemblyReference.cache
 D:\Proj\StateManager\SMTest\obj\Debug\SMtest.dll
 D:\Proj\StateManager\SMTest\obj\Debug\SMtest.pdb
+D:\Proj\StateManager\SMTest\obj\Debug\SMtest.csprojAssemblyReference.cache
+D:\Proj\StateManager\SMTest\obj\Debug\SMtest.csproj.CoreCompileInputs.cache
+D:\Proj\StateManager\SMTest\obj\Debug\SMtest.csproj.CopyComplete

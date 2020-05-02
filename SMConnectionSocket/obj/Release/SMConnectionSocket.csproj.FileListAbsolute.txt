@@ -1,0 +1,7 @@
+D:\Proj\StateManager-git\bin\Release\SMConnectionSocket.dll
+D:\Proj\StateManager-git\bin\Release\SMConnectionSocket.pdb
+D:\Proj\StateManager-git\SMConnectionSocket\obj\Release\SMConnectionSocket.dll
+D:\Proj\StateManager-git\SMConnectionSocket\obj\Release\SMConnectionSocket.pdb
+D:\Proj\StateManager\bin\Release\SMConnectionSocket.dll
+D:\Proj\StateManager\SMConnectionSocket\obj\Release\SMConnectionSocket.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMConnectionSocket\obj\Release\SMConnectionSocket.dll

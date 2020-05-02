@@ -15,7 +15,7 @@ namespace StateManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SMHttpApiForm());
+            Application.Run(new SMHTTPApiForm());
         }
     }
 }

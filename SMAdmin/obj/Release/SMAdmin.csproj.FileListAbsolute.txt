@@ -1,0 +1,5 @@
+D:\Proj\StateManager\bin\Release\SMAdmin.dll
+D:\Proj\StateManager\SMAdmin\obj\Release\SMAdmin.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMAdmin\obj\Release\StateManager.SMAdminForm.resources
+D:\Proj\StateManager\SMAdmin\obj\Release\SMAdmin.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMAdmin\obj\Release\SMAdmin.dll

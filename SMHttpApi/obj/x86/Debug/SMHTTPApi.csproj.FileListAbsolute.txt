@@ -1,0 +1,7 @@
+D:\Proj\StateManager\SMHttpApi\bin\x86\Debug\SMHttpApi.exe.config
+D:\Proj\StateManager\SMHttpApi\bin\x86\Debug\SMHttpApi.exe
+D:\Proj\StateManager\SMHttpApi\bin\x86\Debug\SMHttpApi.pdb
+D:\Proj\StateManager\SMHttpApi\obj\x86\Debug\StateManager.SMHTTPApiForm.resources
+D:\Proj\StateManager\SMHttpApi\obj\x86\Debug\SMHTTPApi.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMHttpApi\obj\x86\Debug\SMHttpApi.exe
+D:\Proj\StateManager\SMHttpApi\obj\x86\Debug\SMHttpApi.pdb

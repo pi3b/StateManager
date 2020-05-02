@@ -1,0 +1,12 @@
+D:\Proj\StateManager\SMConnectionORACLE\bin\x86\Debug\SMConnectionORACLE.dll
+D:\Proj\StateManager\SMConnectionORACLE\bin\x86\Debug\SMConnectionORACLE.pdb
+D:\Proj\StateManager\SMConnectionORACLE\bin\x86\Debug\Newtonsoft.Json.dll
+D:\Proj\StateManager\SMConnectionORACLE\bin\x86\Debug\Oracle.ManagedDataAccess.dll
+D:\Proj\StateManager\SMConnectionORACLE\bin\x86\Debug\SMConnection.dll
+D:\Proj\StateManager\SMConnectionORACLE\bin\x86\Debug\SMCore.exe
+D:\Proj\StateManager\SMConnectionORACLE\bin\x86\Debug\Interop.MSScriptControl.dll
+D:\Proj\StateManager\SMConnectionORACLE\bin\x86\Debug\SMConnection.pdb
+D:\Proj\StateManager\SMConnectionORACLE\bin\x86\Debug\SMCore.pdb
+D:\Proj\StateManager\SMConnectionORACLE\obj\x86\Debug\SMConnectionORACLE.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMConnectionORACLE\obj\x86\Debug\SMConnectionORACLE.dll
+D:\Proj\StateManager\SMConnectionORACLE\obj\x86\Debug\SMConnectionORACLE.pdb

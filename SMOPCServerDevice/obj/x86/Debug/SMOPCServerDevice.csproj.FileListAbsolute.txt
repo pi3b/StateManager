@@ -1,0 +1,9 @@
+D:\Proj\StateManager\SMOPCServerDevice\bin\x86\Debug\SMOPCServerDevice.dll
+D:\Proj\StateManager\SMOPCServerDevice\bin\x86\Debug\SMOPCServerDevice.pdb
+D:\Proj\StateManager\SMOPCServerDevice\bin\x86\Debug\SMOPCServerDevice.tlb
+D:\Proj\StateManager\SMOPCServerDevice\bin\x86\Debug\SMCore.exe
+D:\Proj\StateManager\SMOPCServerDevice\bin\x86\Debug\Newtonsoft.Json.dll
+D:\Proj\StateManager\SMOPCServerDevice\bin\x86\Debug\Interop.MSScriptControl.dll
+D:\Proj\StateManager\SMOPCServerDevice\bin\x86\Debug\SMCore.pdb
+D:\Proj\StateManager\SMOPCServerDevice\obj\x86\Debug\SMOPCServerDevice.dll
+D:\Proj\StateManager\SMOPCServerDevice\obj\x86\Debug\SMOPCServerDevice.pdb

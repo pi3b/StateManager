@@ -1,0 +1,3 @@
+D:\Proj\StateManager\bin\Release\SMConnectionORACLE.dll
+D:\Proj\StateManager\SMConnectionORACLE\obj\Release\SMConnectionORACLE.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMConnectionORACLE\obj\Release\SMConnectionORACLE.dll

@@ -158,7 +158,7 @@ namespace StateManager
         }
         public void SetAlarmReply(int ID, string REPLY)
         {
-            DB.Excute(string.Format("UPDATE ALARM SET REPLY='{0}',REPLYTIME=DATETIME() WHERE ID={1};", REPLY, ID));
+            DB.Excute(string.Format("UPDATE ALARM SET REPLY='{0}',REPLYTIME=DATETIME('now','localtime') WHERE ID={1};", REPLY, ID));
         }
         public void DeleteAlarm(int ID)
         {
@@ -200,7 +200,7 @@ namespace StateManager
         public void AddAlarm(string SONAME, string SOSTATE, string Msg, string Ask)
         {
             DeActiveAlarm(SONAME);
-            DB.Excute(string.Format("INSERT INTO ALARM(SONAME,SOSTATE,MSG,ASK,ASKTIME) VALUES('{0}','{1}','{2}','{3}',DATETIME());", SONAME, SOSTATE, Msg, Ask));
+            DB.Excute(string.Format("INSERT INTO ALARM(SONAME,SOSTATE,MSG,ASK,ASKTIME) VALUES('{0}','{1}','{2}','{3}',DATETIME('now','localtime'));", SONAME, SOSTATE, Msg, Ask));
             ReLoadList();
             int ID = (int)DB.ReadFirstValue(string.Format("SELECT ID FROM ALARM WHERE SONAME='{0}' AND ACTIVE=1 ORDER BY ID DESC;", SONAME));
             if (IsAutoPopUp)

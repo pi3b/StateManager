@@ -1,0 +1,6 @@
+D:\Proj\StateManager\bin\Release\HostDemo.exe
+D:\Proj\StateManager\HostDemo\obj\Release\HostDemo.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\HostDemo\obj\Release\StateManager.Form1.resources
+D:\Proj\StateManager\HostDemo\obj\Release\StateManager.Properties.Resources.resources
+D:\Proj\StateManager\HostDemo\obj\Release\HostDemo.csproj.GenerateResource.Cache
+D:\Proj\StateManager\HostDemo\obj\Release\HostDemo.exe

@@ -1,0 +1,10 @@
+D:\Proj\StateManager\SMMQTT\bin\x86\Debug\SMMQTT.exe.config
+D:\Proj\StateManager\SMMQTT\bin\x86\Debug\SMMQTT.exe
+D:\Proj\StateManager\SMMQTT\bin\x86\Debug\SMMQTT.pdb
+D:\Proj\StateManager\SMMQTT\bin\x86\Debug\MQTTnet.dll
+D:\Proj\StateManager\SMMQTT\obj\x86\Debug\SMMQTT.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMMQTT\obj\x86\Debug\StateManager.SMMQTTForm.resources
+D:\Proj\StateManager\SMMQTT\obj\x86\Debug\StateManager.Properties.Resources.resources
+D:\Proj\StateManager\SMMQTT\obj\x86\Debug\SMMQTT.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMMQTT\obj\x86\Debug\SMMQTT.exe
+D:\Proj\StateManager\SMMQTT\obj\x86\Debug\SMMQTT.pdb

@@ -1,0 +1,6 @@
+D:\Proj\StateManager\bin\Release\SMHttpApi.exe.config
+D:\Proj\StateManager\bin\Release\SMHttpApi.exe
+D:\Proj\StateManager\SMHttpApi\obj\Release\SMHTTPApi.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMHttpApi\obj\Release\StateManager.SMHTTPApiForm.resources
+D:\Proj\StateManager\SMHttpApi\obj\Release\SMHTTPApi.csproj.GenerateResource.Cache
+D:\Proj\StateManager\SMHttpApi\obj\Release\SMHttpApi.exe

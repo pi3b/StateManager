@@ -1,0 +1,11 @@
+D:\Proj\StateManager\HostDemo\bin\x86\Debug\HostDemo.exe
+D:\Proj\StateManager\HostDemo\bin\x86\Debug\HostDemo.pdb
+D:\Proj\StateManager\HostDemo\bin\x86\Debug\SMCore.exe
+D:\Proj\StateManager\HostDemo\bin\x86\Debug\Interop.MSScriptControl.dll
+D:\Proj\StateManager\HostDemo\bin\x86\Debug\SMCore.pdb
+D:\Proj\StateManager\HostDemo\obj\x86\Debug\HostDemo.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\HostDemo\obj\x86\Debug\StateManager.Form1.resources
+D:\Proj\StateManager\HostDemo\obj\x86\Debug\StateManager.Properties.Resources.resources
+D:\Proj\StateManager\HostDemo\obj\x86\Debug\HostDemo.csproj.GenerateResource.Cache
+D:\Proj\StateManager\HostDemo\obj\x86\Debug\HostDemo.exe
+D:\Proj\StateManager\HostDemo\obj\x86\Debug\HostDemo.pdb

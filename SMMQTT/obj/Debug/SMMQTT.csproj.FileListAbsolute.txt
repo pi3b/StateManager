@@ -1,0 +1,12 @@
+D:\Proj\StateManager\SMMQTT\bin\Debug\SMMQTT.exe.config
+D:\Proj\StateManager\SMMQTT\obj\Debug\StateManager.Properties.Resources.resources
+D:\Proj\StateManager\SMMQTT\obj\Debug\SMMQTT.csproj.GenerateResource.Cache
+D:\Proj\StateManager\bin\Debug\SMMQTT.exe.config
+D:\Proj\StateManager\bin\Debug\SMMQTT.exe
+D:\Proj\StateManager\bin\Debug\SMMQTT.pdb
+D:\Proj\StateManager\SMMQTT\obj\Debug\SMMQTT.exe
+D:\Proj\StateManager\SMMQTT\obj\Debug\SMMQTT.pdb
+D:\Proj\StateManager\SMMQTT\obj\Debug\StateManager.SMMQTTForm.resources
+D:\Proj\StateManager\SMMQTT\obj\Debug\SMMQTT.csprojAssemblyReference.cache
+D:\Proj\StateManager\SMMQTT\obj\Debug\SMMQTT.csproj.CoreCompileInputs.cache
+D:\Proj\StateManager\SMMQTT\obj\Debug\SMMQTT.csproj.CopyComplete

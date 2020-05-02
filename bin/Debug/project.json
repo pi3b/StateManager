@@ -54,8 +54,42 @@
 			"Tip": "西门子s7-1200设备",
 			"Auto": 1,
 			"TypeName": "SMConnectionHsl",
-			"ConnectionString": "192.168.2.1:102:SiemensS7Net:s1200",//SMConnectionHsl 连接字符串的格式，IP:端口:SiemensS7Net（西门子s7协议）/MelsecMcNet（三菱Mc协议设备）...:s1200/s1500...，详见实现代码
+			"ConnectionString": "192.168.1.12:102:SiemensS7Net:s1200",//SMConnectionHsl 连接字符串的格式，IP:端口:SiemensS7Net（西门子s7协议）/MelsecMcNet（三菱Mc协议设备）...:s1200/s1500...，详见实现代码
 		},		
+		//演示HttpApi里用的组件
+		{
+			"Name": "HttpApi",
+			"TypeName": "SMHTTPApi",
+			"Auto":0,
+			"ServerPort":666,
+			
+			
+		},		
+		{
+			"Name":"MQTT",
+			"TypeName":"SMMQTTForm",
+			"Auto":1,
+			"ServerPort":1883,
+		},
+		//演示OPC客户端中用的组件
+		{
+			"Name":"OPCClientTest",
+			"TypeName":"SMOPCClient",
+			"Auto":0,
+			"OPCServerName":"SMOPC.DA2",
+			"Groups":{
+				"G1":{
+					"别名1":"PLC_S7.DB1.0:D",//格式为：连接名称.地址:类型:注释
+					"别名2":"Simulate.Complete",//服务器自带的Simulate测试项，固定格式，只有22个
+				},
+			},
+		},
+		{
+			"Name":"时间同步",
+			"TypeName":"SMNTPTime",
+			"Auto":1,
+			"Interval":84600000
+		},
 		//一款极为直观的连接管理界面，推荐使用
 		{
 			"Name":"连接管理",
@@ -108,10 +142,11 @@
 			"Name": "演示脚本实例2",
 			"TypeName": "demo-demo-components-using",
 		},
-		//演示HttpApi组件
+		//test
 		{
-			"Name": "HttpApi",
-			"TypeName": "SMHttpApi",
-		},		
+			"Auto": 1,
+			"Name": "SMtest",
+			"TypeName": "SMtest",
+		},
   ]
 }

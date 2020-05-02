@@ -1,0 +1,11 @@
+D:\Proj\StateManager\SMTest\bin\x86\Debug\SMtest.dll
+D:\Proj\StateManager\SMTest\bin\x86\Debug\SMtest.pdb
+D:\Proj\StateManager\SMTest\bin\x86\Debug\Newtonsoft.Json.dll
+D:\Proj\StateManager\SMTest\bin\x86\Debug\SMCore.exe
+D:\Proj\StateManager\SMTest\bin\x86\Debug\SMHttpApi.exe
+D:\Proj\StateManager\SMTest\bin\x86\Debug\Interop.MSScriptControl.dll
+D:\Proj\StateManager\SMTest\bin\x86\Debug\SMCore.pdb
+D:\Proj\StateManager\SMTest\bin\x86\Debug\SMHttpApi.pdb
+D:\Proj\StateManager\SMTest\obj\x86\Debug\SMtest.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMTest\obj\x86\Debug\SMtest.dll
+D:\Proj\StateManager\SMTest\obj\x86\Debug\SMtest.pdb

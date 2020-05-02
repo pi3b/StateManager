@@ -1,0 +1,3 @@
+D:\Proj\StateManager\bin\Release\SMConnectionHsl.dll
+D:\Proj\StateManager\SMConnectionHsl\obj\Release\SMConnectionHsl.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMConnectionHsl\obj\Release\SMConnectionHsl.dll

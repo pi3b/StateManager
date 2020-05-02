@@ -2,6 +2,6 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>D:\Proj\StateManager\bin\Debug\StateManager.exe</StartProgram>
+    <StartProgram>D:\Proj\StateManager\bin\Debug\HostDemo.exe</StartProgram>
   </PropertyGroup>
 </Project>

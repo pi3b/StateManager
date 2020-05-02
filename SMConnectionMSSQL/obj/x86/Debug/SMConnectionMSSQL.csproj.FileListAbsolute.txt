@@ -1,0 +1,11 @@
+D:\Proj\StateManager\SMConnectionMSSQL\bin\x86\Debug\SMConnectionMSSQL.dll
+D:\Proj\StateManager\SMConnectionMSSQL\bin\x86\Debug\SMConnectionMSSQL.pdb
+D:\Proj\StateManager\SMConnectionMSSQL\bin\x86\Debug\Newtonsoft.Json.dll
+D:\Proj\StateManager\SMConnectionMSSQL\bin\x86\Debug\SMConnection.dll
+D:\Proj\StateManager\SMConnectionMSSQL\bin\x86\Debug\SMCore.exe
+D:\Proj\StateManager\SMConnectionMSSQL\bin\x86\Debug\Interop.MSScriptControl.dll
+D:\Proj\StateManager\SMConnectionMSSQL\bin\x86\Debug\SMConnection.pdb
+D:\Proj\StateManager\SMConnectionMSSQL\bin\x86\Debug\SMCore.pdb
+D:\Proj\StateManager\SMConnectionMSSQL\obj\x86\Debug\SMConnectionMSSQL.csprojResolveAssemblyReference.cache
+D:\Proj\StateManager\SMConnectionMSSQL\obj\x86\Debug\SMConnectionMSSQL.dll
+D:\Proj\StateManager\SMConnectionMSSQL\obj\x86\Debug\SMConnectionMSSQL.pdb

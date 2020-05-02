@@ -9,7 +9,6 @@ using System.Windows.Forms;
 using OPCAutomation;
 using Newtonsoft.Json.Linq;
 //using System.Runtime.InteropServices;
-using System.Collections.Generic;
 
 namespace StateManager
 {
@@ -25,10 +24,6 @@ namespace StateManager
 			        ""OPCServerName"":""SMOPC.DA2"",
 			        ""Groups"":{
 				        ""G1"":{
-					        ""别名1"":""PLC_S7.DB1.0:D:此示例为long(32位)类型"",//格式为：连接名称.地址:类型:注释
-					        ""别名2"":""Simulate.Complete"",//服务器自带的Simulate测试项，固定格式，只有22个
-				        },
-				        ""G2"":{
 					        ""别名1"":""PLC_S7.DB1.0:D:此示例为long(32位)类型"",//格式为：连接名称.地址:类型:注释
 					        ""别名2"":""Simulate.Complete"",//服务器自带的Simulate测试项，固定格式，只有22个
 				        },
@@ -82,12 +77,6 @@ namespace StateManager
             this.jo = so.JObject;
         }
 
-        private void SMOPCDAAutoClientForm_Shown(object sender, EventArgs e)
-        {
-            string[] items=LocalOPCItems.Keys.ToArray<string>();
-            listBox1.Items.AddRange(items);
-        }
-
         //连接
         private void buttonConnect_Click(object sender, EventArgs e)
         {
@@ -102,13 +91,18 @@ namespace StateManager
                 foreach (KeyValuePair<string, JToken> kvp in (JObject)jo["Groups"])
                 {
                     OPCGroup G = OPCServer.OPCGroups.Add(kvp.Key);
+                    G.UpdateRate = 10000;
+                    G.IsActive = false;
+                    G.IsSubscribed = false;
                     foreach (KeyValuePair<string, JToken> kvpp in (JObject)kvp.Value)
                     {
-                        OPCItem oItem = G.OPCItems.AddItem((string)kvpp.Value, i);
+                        //OPCItem oItem = G.OPCItems.AddItem((string)kvpp.Value, i);
                         i++;
-                        LocalOPCItems.Add(kvp.Key + "_" + kvpp.Key, oItem);
+                        //LocalOPCItems.Add(kvp.Key + "_" + kvpp.Key, oItem);
                     }
                 }
+                string[] items = LocalOPCItems.Keys.ToArray<string>();
+                listBox1.Items.AddRange(items);
             }
         }
         object lockobj=new object();
@@ -116,15 +110,24 @@ namespace StateManager
         {
             lock (lockobj)
             {
+                if (OPCServer == null)
+                    return;
                 if (OPCServer.ServerState != (int)OPCServerState.OPCRunning) 
                     return;
-                OPCGroup G;
-                OPCItem I;
+                foreach(OPCGroup G in OPCServer.OPCGroups)
+                {
+                    foreach (OPCItem I in G.OPCItems)
+                    {
+                    }
+                    OPCServer.OPCGroups.Remove(G.Name);
+                }
                 OPCServer.OPCGroups.RemoveAll();
-                OPCServer.Disconnect();
-                OPCServer = null;
-                GC.Collect();
                 LocalOPCItems.Clear();
+                GC.Collect();
+                OPCServer.Disconnect();
+                GC.Collect();
+                OPCServer = null;
+                GC.Collect();//如果有多个group，断开后，服务器会有一个group不会释放，本程序关掉后，服务器有个连接没有释放，为什么呢？使用kep客户端不存在这情况
             }
         }
     }

@@ -1,0 +1,12 @@
+E:\项目\新乡四期\C#\WManager\bin\Debug\WManager.dll
+E:\项目\新乡四期\C#\WManager\bin\Debug\WManager.pdb
+E:\项目\新乡四期\C#\WManager\obj\Debug\WManager.dll
+E:\项目\新乡四期\C#\WManager\obj\Debug\WManager.pdb
+E:\项目\新乡四期\C#\WManager\obj\Debug\SIZ.AlarmForm.resources
+E:\项目\新乡四期\C#\WManager\obj\Debug\SIZ.ConnectionForm.resources
+E:\项目\新乡四期\C#\WManager\obj\Debug\SIZ.StateManagerForm.resources
+E:\项目\新乡四期\C#\WManager\obj\Debug\WManager.csproj.GenerateResource.Cache
+E:\项目\新乡四期\C#\WManager\bin\Debug\HslCommunication.dll
+E:\项目\新乡四期\C#\WManager\bin\Debug\Newtonsoft.Json.dll
+E:\项目\新乡四期\C#\WManager\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\项目\新乡四期\C#\WManager\bin\Debug\HslCommunication.xml

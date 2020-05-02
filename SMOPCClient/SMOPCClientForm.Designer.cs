@@ -70,9 +70,8 @@
             this.Controls.Add(this.buttonDisconnect);
             this.Controls.Add(this.buttonConnect);
             this.Controls.Add(this.listBox1);
-            this.Name = "SMOPCDAAutoClientForm";
+            this.Name = "SMOPCClientForm";
             this.Text = "SMOPCClient  OPC客户端";
-            this.Shown += new System.EventHandler(this.SMOPCDAAutoClientForm_Shown);
             this.ResumeLayout(false);
 
         }
